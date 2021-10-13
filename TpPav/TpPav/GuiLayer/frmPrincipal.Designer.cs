@@ -44,6 +44,7 @@ namespace TpPav
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).BeginInit();
@@ -61,7 +62,7 @@ namespace TpPav
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(776, 100);
+            this.groupBox1.Size = new System.Drawing.Size(667, 100);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
@@ -69,6 +70,9 @@ namespace TpPav
             // cboEstado
             // 
             this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "S",
+            "N"});
             this.cboEstado.Location = new System.Drawing.Point(334, 22);
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(183, 23);
@@ -77,6 +81,11 @@ namespace TpPav
             // cboPerfil
             // 
             this.cboPerfil.FormattingEnabled = true;
+            this.cboPerfil.Items.AddRange(new object[] {
+            "Administrador",
+            "Tester",
+            "Desarrollador",
+            "Responsable de reportes"});
             this.cboPerfil.Location = new System.Drawing.Point(78, 62);
             this.cboPerfil.Name = "cboPerfil";
             this.cboPerfil.Size = new System.Drawing.Size(164, 23);
@@ -137,7 +146,7 @@ namespace TpPav
             this.groupBox2.Controls.Add(this.dgvUsuarios);
             this.groupBox2.Location = new System.Drawing.Point(12, 144);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(776, 253);
+            this.groupBox2.Size = new System.Drawing.Size(667, 234);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos";
@@ -150,14 +159,14 @@ namespace TpPav
             this.dgvUsuarios.ReadOnly = true;
             this.dgvUsuarios.RowTemplate.Height = 25;
             this.dgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvUsuarios.Size = new System.Drawing.Size(764, 225);
+            this.dgvUsuarios.Size = new System.Drawing.Size(662, 212);
             this.dgvUsuarios.TabIndex = 0;
             this.dgvUsuarios.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuarios_CellClick);
             // 
             // btnModificar
             // 
             this.btnModificar.Enabled = false;
-            this.btnModificar.Location = new System.Drawing.Point(604, 403);
+            this.btnModificar.Location = new System.Drawing.Point(510, 384);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 2;
@@ -167,7 +176,7 @@ namespace TpPav
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(507, 403);
+            this.btnNuevo.Location = new System.Drawing.Point(413, 384);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 23);
             this.btnNuevo.TabIndex = 3;
@@ -177,7 +186,7 @@ namespace TpPav
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(698, 403);
+            this.btnSalir.Location = new System.Drawing.Point(604, 384);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 4;
@@ -187,7 +196,7 @@ namespace TpPav
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(688, 118);
+            this.btnConsultar.Location = new System.Drawing.Point(604, 115);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(75, 23);
             this.btnConsultar.TabIndex = 5;
@@ -195,11 +204,22 @@ namespace TpPav
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.Location = new System.Drawing.Point(510, 115);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpiar.TabIndex = 6;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
             // frmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(692, 422);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnNuevo);
@@ -234,6 +254,7 @@ namespace TpPav
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.TextBox txtEmail;
         public System.Windows.Forms.DataGridView dgvUsuarios;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }
 

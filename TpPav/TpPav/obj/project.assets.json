@@ -459,11 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\pav2021\\TP-Final\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
+      "projectUniqueName": "C:\\Users\\Marcos\\Documents\\TpNuevo\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
       "projectName": "TpPav",
-      "projectPath": "D:\\pav2021\\TP-Final\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
+      "projectPath": "C:\\Users\\Marcos\\Documents\\TpNuevo\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
       "packagesPath": "C:\\Users\\Marcos\\.nuget\\packages\\",
-      "outputPath": "D:\\pav2021\\TP-Final\\Tp1-PAV2021\\TpPav\\TpPav\\obj\\",
+      "outputPath": "C:\\Users\\Marcos\\Documents\\TpNuevo\\Tp1-PAV2021\\TpPav\\TpPav\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Marcos\\AppData\\Roaming\\NuGet\\NuGet.Config",

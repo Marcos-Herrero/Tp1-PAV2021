@@ -1,13 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="GuiLayer\FormularioPrincipal.cs">
+    <Compile Update="GuiLayer\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GuiLayer\AgregarUsuario.cs">
+    <Compile Update="GuiLayer\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GuiLayer\ModificarUsuario.cs">
+    <Compile Update="GuiLayer\frmAgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GuiLayer\frmModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GuiLayer\frmVentana.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

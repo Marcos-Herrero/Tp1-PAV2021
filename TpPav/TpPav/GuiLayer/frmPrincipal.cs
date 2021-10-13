@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using TpPav.GuiLayer;
 
 namespace TpPav
 {
@@ -18,13 +19,17 @@ namespace TpPav
             InitializeComponent();
         }
 
-        SqlConnection conexion = new SqlConnection("server=DESKTOP-82E3KBS\\SQLEXPRESS;database=DB_TP; integrated security = true");
+
 
         private void frmUsuarios_Load(object sender, EventArgs e)
         {
             try
             {
-                string consulta = "SELECT TOP 20 * FROM Usuarios ORDER BY id_usuario DESC";
+                frmLogin frmlog = new frmLogin();
+                frmlog.ShowDialog();
+                string consulta = "SELECT TOP 20 id_usuario, P.nombre, usuario,email,estado " +
+                    "FROM Usuarios U JOIN Perfiles P ON U.id_perfil = P.id_perfil" +
+                    " ORDER BY id_usuario DESC";
                 DataTable resultado = DataManager.GetInstance().ConsultaSql(consulta);
                 dgvUsuarios.DataSource = resultado;
             }
@@ -39,11 +44,13 @@ namespace TpPav
         private void btnConsultar_Click(object sender, EventArgs e)
         {
 
-            string consulta = "SELECT * FROM Usuarios where id_usuario > 0";
+            string consulta = "SELECT id_usuario, P.nombre, usuario,email,estado " +
+                "FROM Usuarios U JOIN Perfiles P ON U.id_perfil = P.id_perfil " +
+                "where id_usuario > 0";
             if (txtNombre.Text != "")
                 consulta += " AND usuario= '"+txtNombre.Text+"'";
             if (cboPerfil.Text != "")
-                consulta += " AND id_perfil= "+cboPerfil.Text.ToString()+"";
+                consulta += " AND P.nombre= '"+cboPerfil.Text+"'";
             if (cboEstado.Text != "")
                 consulta += " AND estado='" + cboEstado.Text.ToString() + "' ";
             if (txtEmail.Text != "")
@@ -87,6 +94,14 @@ namespace TpPav
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtNombre.Text = "";
+            txtEmail.Text = "";
+            cboEstado.Text = "";
+            cboPerfil.Text = "";
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RaMP2OA339J7c/R6et+4Hf0XOxEx8k1zGk77sSucZOa64VpzNY2eFQQzaMIad5h4YhG4KhznYidwcaAm/OmmFw==",
+  "dgSpecHash": "BgTdZfToY3MoJ2drZurDg+PhdAghCCicwMRC25L+hNbvlCz9SHnvTFVAbF3qbCQ9O3RcgaDxWK8/wuSHStIt3w==",
   "success": true,
-  "projectFilePath": "D:\\pav2021\\TP-Final\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
+  "projectFilePath": "C:\\Users\\Marcos\\Documents\\TpNuevo\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
