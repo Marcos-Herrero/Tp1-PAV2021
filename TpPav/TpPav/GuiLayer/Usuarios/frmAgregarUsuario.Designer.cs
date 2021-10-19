@@ -28,7 +28,7 @@ namespace TpPav
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
-        {
+            {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboEstado = new System.Windows.Forms.ComboBox();
             this.cboPerfil = new System.Windows.Forms.ComboBox();
@@ -76,9 +76,9 @@ namespace TpPav
             // 
             this.cboPerfil.FormattingEnabled = true;
             this.cboPerfil.Location = new System.Drawing.Point(65, 112);
-            this.cboPerfil.Name = "cboPerfil";
             this.cboPerfil.Size = new System.Drawing.Size(155, 23);
             this.cboPerfil.TabIndex = 23;
+            this.cboPerfil.Name = "cboPerfil";
             // 
             // txtEmail
             // 
@@ -179,6 +179,7 @@ namespace TpPav
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.frmNuevo_Load);
 
         }
 

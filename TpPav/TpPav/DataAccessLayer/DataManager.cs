@@ -15,7 +15,7 @@ namespace TpPav
         public DataManager()
         {
             dbConnection = new SqlConnection();
-            var string_conexion = "server=DESKTOP-82E3KBS\\SQLEXPRESS;database=DB_TP; integrated security = true";
+            var string_conexion = "server=NBAR15232;database=DB_TP; integrated security = true";
             dbConnection.ConnectionString = string_conexion;
 
         }
@@ -57,7 +57,6 @@ namespace TpPav
                     foreach (var item in prs)
                     {
                         cmd.Parameters.AddWithValue(item.Key, item.Value);
-
                     }
                 }
                 tabla.Load(cmd.ExecuteReader());
