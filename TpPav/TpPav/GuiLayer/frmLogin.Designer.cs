@@ -88,6 +88,7 @@ namespace TpPav.GuiLayer
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(214, 23);
             this.txtContraseña.TabIndex = 5;
+            this.txtContraseña.UseSystemPasswordChar = true;
             // 
             // frmLogin
             // 

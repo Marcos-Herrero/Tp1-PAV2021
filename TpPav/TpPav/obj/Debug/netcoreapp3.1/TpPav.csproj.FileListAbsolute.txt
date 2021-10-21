@@ -83,3 +83,4 @@ C:\Users\ecassini\Desktop\pav1_2021\tp\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcore
 C:\Users\ecassini\Desktop\pav1_2021\tp\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.GUILayer.Usuarios.frmABMPermisos.resources
 C:\Users\ecassini\Desktop\pav1_2021\tp\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.GUILayer.Permisoes.frmPermisos.resources
 C:\Users\ecassini\Desktop\pav1_2021\tp\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.frmEliminar.resources
+C:\Users\ecassini\Desktop\pav1_2021\tp\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.frmActualizar.resources

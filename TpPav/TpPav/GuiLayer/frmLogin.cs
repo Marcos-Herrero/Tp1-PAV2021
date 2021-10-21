@@ -42,7 +42,20 @@ namespace TpPav.GuiLayer
             {
                 // Login OK
                 UsuarioLogueado = usr.UsuarioNombre;
-                this.Close();
+                if (UsuarioLogueado=="administrador")
+                { 
+                    frmVentana f= new frmVentana(true);                    
+                    f.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    frmVentana f = new frmVentana(false);                    
+                    f.ShowDialog();
+                    this.Close();
+                }                
+                
+                
             }
             else
             {
@@ -62,8 +75,7 @@ namespace TpPav.GuiLayer
             Environment.Exit(0);
         }
 
-        
 
-       
-    }
+
+       }
 }

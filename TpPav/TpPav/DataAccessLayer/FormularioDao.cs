@@ -73,7 +73,7 @@ namespace TpPav.DataAccessLayer
             String strSql = string.Concat(" SELECT id_formulario, ",
                                           "        nombre ",
                                           "   FROM Formularios ",
-                                          "  WHERE id_formulario =@id");
+                                          "  WHERE id_formulario = @id");
 
             var parametros = new Dictionary<string, object>();
             parametros.Add("id_formulario", id);

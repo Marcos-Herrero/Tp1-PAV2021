@@ -18,7 +18,7 @@ namespace TpPav
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmVentana());
+            Application.Run(new frmLogin());
         }
     }
 }

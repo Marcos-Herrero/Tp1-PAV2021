@@ -11,11 +11,11 @@ using TpPav.Entities;
 
 namespace TpPav
 {
-    public partial class frmModificar : Form
+    public partial class frmActualizar : Form
     {
         private UsuarioService oUsuarioService;
         private PerfilService oPerfilService;
-        public frmModificar()
+        public frmActualizar()
         {
             InitializeComponent();
             oUsuarioService = new UsuarioService();
@@ -78,5 +78,7 @@ namespace TpPav
             frmUsuarios usu = new frmUsuarios();
             usu.Show();
         }
+
+       
     }
 }

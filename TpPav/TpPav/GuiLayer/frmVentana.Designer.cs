@@ -31,14 +31,15 @@ namespace TpPav.GuiLayer
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuariosMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.controlDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.formulariosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.formulariosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.administrarFormulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.permisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarPermisosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formulariosToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarUsuarios = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,10 +48,9 @@ namespace TpPav.GuiLayer
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
-            this.usuariosMenu,
             this.formulariosToolStripMenuItem,
-            this.formulariosToolStripMenuItem2,
-            this.permisosToolStripMenuItem});
+            this.permisosToolStripMenuItem,
+            this.soporteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 4, 0, 4);
@@ -63,22 +63,6 @@ namespace TpPav.GuiLayer
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
             this.archivoToolStripMenuItem.Text = "Archivo";
-            // 
-            // usuariosMenu
-            // 
-            this.usuariosMenu.AccessibleName = "";
-            this.usuariosMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.controlDeUsuariosToolStripMenuItem});
-            this.usuariosMenu.Name = "usuariosMenu";
-            this.usuariosMenu.Size = new System.Drawing.Size(96, 29);
-            this.usuariosMenu.Text = "Usuarios";
-            // 
-            // controlDeUsuariosToolStripMenuItem
-            // 
-            this.controlDeUsuariosToolStripMenuItem.Name = "controlDeUsuariosToolStripMenuItem";
-            this.controlDeUsuariosToolStripMenuItem.Size = new System.Drawing.Size(271, 34);
-            this.controlDeUsuariosToolStripMenuItem.Text = "Control de Usuarios";
-            this.controlDeUsuariosToolStripMenuItem.Click += new System.EventHandler(this.controlDeUsuariosToolStripMenuItem_Click);
             // 
             // formulariosToolStripMenuItem
             // 
@@ -95,21 +79,6 @@ namespace TpPav.GuiLayer
             this.formulariosToolStripMenuItem1.Text = "Administrar Perfiles";
             this.formulariosToolStripMenuItem1.Click += new System.EventHandler(this.formulariosToolStripMenuItem1_Click);
             // 
-            // formulariosToolStripMenuItem2
-            // 
-            this.formulariosToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.administrarFormulariosToolStripMenuItem});
-            this.formulariosToolStripMenuItem2.Name = "formulariosToolStripMenuItem2";
-            this.formulariosToolStripMenuItem2.Size = new System.Drawing.Size(122, 29);
-            this.formulariosToolStripMenuItem2.Text = "Formularios";
-            // 
-            // administrarFormulariosToolStripMenuItem
-            // 
-            this.administrarFormulariosToolStripMenuItem.Name = "administrarFormulariosToolStripMenuItem";
-            this.administrarFormulariosToolStripMenuItem.Size = new System.Drawing.Size(305, 34);
-            this.administrarFormulariosToolStripMenuItem.Text = "Administrar Formularios";
-            this.administrarFormulariosToolStripMenuItem.Click += new System.EventHandler(this.administrarFormulariosToolStripMenuItem_Click);
-            // 
             // permisosToolStripMenuItem
             // 
             this.permisosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -124,6 +93,46 @@ namespace TpPav.GuiLayer
             this.administrarPermisosToolStripMenuItem.Size = new System.Drawing.Size(282, 34);
             this.administrarPermisosToolStripMenuItem.Text = "Administrar Permisos";
             this.administrarPermisosToolStripMenuItem.Click += new System.EventHandler(this.administrarPermisosToolStripMenuItem_Click);
+            // 
+            // soporteToolStripMenuItem
+            // 
+            this.soporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.formulariosToolStripMenuItem3,
+            this.usuariosToolStripMenuItem});
+            this.soporteToolStripMenuItem.Name = "soporteToolStripMenuItem";
+            this.soporteToolStripMenuItem.Size = new System.Drawing.Size(92, 29);
+            this.soporteToolStripMenuItem.Text = "Soporte";
+            // 
+            // formulariosToolStripMenuItem3
+            // 
+            this.formulariosToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarUsuariosToolStripMenuItem});
+            this.formulariosToolStripMenuItem3.Name = "formulariosToolStripMenuItem3";
+            this.formulariosToolStripMenuItem3.Size = new System.Drawing.Size(270, 34);
+            this.formulariosToolStripMenuItem3.Text = "Formularios";
+            // 
+            // administrarUsuariosToolStripMenuItem
+            // 
+            this.administrarUsuariosToolStripMenuItem.Name = "administrarUsuariosToolStripMenuItem";
+            this.administrarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
+            this.administrarUsuariosToolStripMenuItem.Text = "Administrar formularios";
+            this.administrarUsuariosToolStripMenuItem.Click += new System.EventHandler(this.administrarUsuariosToolStripMenuItem_Click);
+            // 
+            // usuariosToolStripMenuItem
+            // 
+            this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.administrarUsuarios});
+            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.usuariosToolStripMenuItem.Text = "Usuarios";
+            // 
+            // administrarUsuarios
+            // 
+            this.administrarUsuarios.Enabled = false;
+            this.administrarUsuarios.Name = "administrarUsuarios";
+            this.administrarUsuarios.Size = new System.Drawing.Size(277, 34);
+            this.administrarUsuarios.Text = "Administrar usuarios";
+            this.administrarUsuarios.Click += new System.EventHandler(this.administrarUsuariosToolStripMenuItem1_Click);
             // 
             // frmVentana
             // 
@@ -148,13 +157,14 @@ namespace TpPav.GuiLayer
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usuariosMenu;
-        private System.Windows.Forms.ToolStripMenuItem controlDeUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formulariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formulariosToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem formulariosToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem administrarFormulariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem permisosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administrarPermisosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem soporteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formulariosToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem administrarUsuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem administrarUsuarios;
     }
 }

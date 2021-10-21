@@ -44,7 +44,7 @@ namespace TpPav
                         oUsuario.Email = txtEmail.Text;
                         oUsuario.Perfil = new Perfil();
                         oUsuario.Perfil.Id_Perfil = (int)cboPerfil.SelectedValue;
-                        oUsuario.Estado = char.Parse(cboEstado.Text);
+                        oUsuario.Estado = cboEstado.Text;
                         if (oUsuarioService.CrearUsuario(oUsuario))
                         {
                             MessageBox.Show("Usuario insertado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);

@@ -20,13 +20,15 @@ namespace TpPav.BusinessLayer
         }
         public Usuario ValidarUsuarioAdm(string usuario, string password)
         {
+
             var usr = oUsuarioDao.GetUser(usuario);
-
-            if (usr.Password != null && usr.Password.Equals(password))
+            if (usr != null)
             {
-                return usr;
-            }
-
+                if (usr.Password != null && usr.Password.Equals(password))
+                {
+                    return usr;
+                }
+            }           
             return null;
         }
 

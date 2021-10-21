@@ -12,10 +12,10 @@ namespace TpPav.DataAccessLayer
         {
             List<Usuario> listadoUsuarios = new List<Usuario>();
             string consulta = "SELECT TOP 20 id_usuario, P.nombre, usuario,email,estado,password " +
-                    "FROM Usuarios U JOIN Perfiles P ON U.id_perfil = P.id_perfil"+
-                    
+                    "FROM Usuarios U JOIN Perfiles P ON U.id_perfil = P.id_perfil" +
+
                     " ORDER BY id_usuario DESC";
-            var resultadoConsulta = (DataRowCollection) DataManager.GetInstance().ConsultaSql(consulta).Rows;
+            var resultadoConsulta = (DataRowCollection)DataManager.GetInstance().ConsultaSql(consulta).Rows;
             foreach (DataRow row in resultadoConsulta)
             {
                 listadoUsuarios.Add(MappingUsuario(row));
@@ -39,7 +39,7 @@ namespace TpPav.DataAccessLayer
 
         }
 
-       public Usuario GetUser(string nombreUsuario)
+        public Usuario GetUser(string nombreUsuario)
         {
             //Construimos la consulta sql para buscar el usuario en la base de datos.
             String strSql = string.Concat(" SELECT id_usuario, ",
@@ -78,9 +78,9 @@ namespace TpPav.DataAccessLayer
                 consulta += " AND (usuario=@usuario) ";
             if (parametros.ContainsKey("nombre"))
                 consulta += " AND (P.nombre=@nombre) ";
-            if(parametros.ContainsKey("estado"))
+            if (parametros.ContainsKey("estado"))
                 consulta += " AND (estado=@estado) ";
-            if(parametros.ContainsKey("email"))
+            if (parametros.ContainsKey("email"))
                 consulta += " AND (email=@email) ";
             var resultadoConsulta = (DataRowCollection)DataManager.GetInstance().ConsultaSql(consulta, parametros).Rows;
 
@@ -98,7 +98,7 @@ namespace TpPav.DataAccessLayer
                              "     VALUES (@usuario, @password, @email, @id_perfil, 0, @estado)";
 
 
-            
+
             var parametros = new Dictionary<string, object>();
             parametros.Add("usuario", oUsuario.UsuarioNombre);
             parametros.Add("password", oUsuario.Password);
@@ -117,7 +117,7 @@ namespace TpPav.DataAccessLayer
                             "         password = @password, " +
                             "         email = @email, " +
                             "         id_perfil = @id_perfil" +
-                            "         estado= @estado"+
+                            "         estado= @estado" +
                             "   WHERE id_usuario = @id_usuario";
 
             var parametros = new Dictionary<string, object>();
@@ -154,15 +154,15 @@ namespace TpPav.DataAccessLayer
                 Id_Usuario = Convert.ToInt32(row["id_Usuario"].ToString()),
                 UsuarioNombre = row["usuario"].ToString(),
                 Email = row["email"].ToString(),
-                Estado = char.Parse(row["estado"].ToString()),
+                Estado = row["estado"].ToString(),
                 Password = row.Table.Columns.Contains("password") ? row["password"].ToString() : null,
                 Perfil = new Perfil()
                 {
-                   Nombre = row["nombre"].ToString(),
+                    Nombre = row["nombre"].ToString(),
                 }
 
             };
-            
+
 
             return oUsuario;
         }

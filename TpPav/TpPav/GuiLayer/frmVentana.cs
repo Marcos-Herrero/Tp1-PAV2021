@@ -18,7 +18,8 @@ namespace TpPav.GuiLayer
             if (admin)
             {
                 InitializeComponent();
-                usuariosMenu.Enabled = true;
+                administrarUsuarios.Enabled = true;
+
 
             }
             else
@@ -32,16 +33,10 @@ namespace TpPav.GuiLayer
         private void frmVentana_Load(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            frmLogin login = new frmLogin();
-            login.ShowDialog();            
-        }
-
-        private void controlDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmUsuarios frmDetalle = new frmUsuarios();
-            frmDetalle.ShowDialog();
             
         }
+
+        
 
         
         private void frmVentana_FormClosing(object sender, FormClosingEventArgs e)
@@ -58,16 +53,24 @@ namespace TpPav.GuiLayer
             frmPer.ShowDialog();
         }
 
-        private void administrarFormulariosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmFormularios frmForm = new frmFormularios();
-            frmForm.ShowDialog();
-        }
+        
 
         private void administrarPermisosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmPermisos frmForm = new frmPermisos();
             frmForm.ShowDialog();
+        }
+
+        private void administrarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFormularios frmForm = new frmFormularios();
+            frmForm.ShowDialog();
+        }
+
+        private void administrarUsuariosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmUsuarios frmDetalle = new frmUsuarios();
+            frmDetalle.ShowDialog();
         }
     }
 
