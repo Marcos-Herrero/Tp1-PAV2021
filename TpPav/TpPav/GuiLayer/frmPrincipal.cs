@@ -140,6 +140,8 @@ namespace TpPav
             {
                 btnModificar.Enabled = true;
             }
+            if (btnEliminar.Enabled == false)
+                btnEliminar.Enabled = true;
         }
 
        
@@ -157,6 +159,13 @@ namespace TpPav
             cboPerfil.Text = "";
         }
 
-       
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (oUsuarioService.EliminarUsuario())
+            {
+                MessageBox.Show("Usuario Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
+            }
+        }
     }
 }
