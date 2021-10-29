@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Text;
 using TpPav.Entities;
 
@@ -8,7 +9,86 @@ namespace TpPav.DataAccessLayer
 {
     class PerfilDao
     {
-        
+        internal bool Create(Perfil perfil)
+        {
+            var string_conexion = "Data Source=NBAR15232;Initial Catalog=SistemaVentas;Integrated Security=true;";
+
+            // Se utiliza para sentencias SQL del tipo “Insert/Update/Delete”
+            SqlConnection dbConnection = new SqlConnection();
+            SqlTransaction dbTransaction = null;
+            try
+            {
+                dbConnection.ConnectionString = string_conexion;
+                dbConnection.Open();
+                //Genero la transacción
+                dbTransaction = dbConnection.BeginTransaction();
+
+                //INSERT FACTURA
+                SqlCommand insertPerfil = new SqlCommand();
+                insertPerfil.Connection = dbConnection;
+                insertPerfil.CommandType = CommandType.Text;
+                insertPerfil.Transaction = dbTransaction;
+                // Establece la instrucción a ejecutar
+                insertPerfil.CommandText = string.Concat("INSERT INTO [dbo].[Perfiles]",
+                                            "           ([nombre]   ",                                          
+                                            "           ,[borrado])      ",
+                                            "     VALUES                 ",
+                                            "           (@nombre  ",                                          
+                                            "           ,@borrado)       ");
+
+
+
+                //Agregamos los parametros
+                insertPerfil.Parameters.AddWithValue("Nombre", perfil.Nombre);                
+                insertPerfil.Parameters.AddWithValue("borrado", false);
+
+                insertPerfil.ExecuteNonQuery();
+
+
+                //ULTIMO ID FACTURA INSERTADO
+                SqlCommand consultaIDPerfil= new SqlCommand();
+                consultaIDPerfil.Connection = dbConnection;
+                consultaIDPerfil.CommandType = CommandType.Text;
+
+                insertPerfil.CommandText = " SELECT @@IDENTITY";
+                var newId = insertPerfil.ExecuteScalar();
+                perfil.Id_Perfil = Convert.ToInt32(newId);
+
+
+                //INSERT PERMISOS
+                foreach (var permisoDetalle in perfil.DetallePermisos)
+                {
+                    //INSERT PERFIL
+                    SqlCommand insertDetalle = new SqlCommand();
+                    insertDetalle.Connection = dbConnection;
+                    insertDetalle.CommandType = CommandType.Text;
+                    insertDetalle.Transaction = dbTransaction;
+                    // Establece la instrucción a ejecutar
+                    insertDetalle.CommandText = string.Concat(" INSERT INTO [dbo].[Permisos] ",
+                                                        "           ([id_formulario]   ",
+                                                        "           ,[id_perfil]         ",
+                                                        "           ,[borrado])             ",
+                                                        "     VALUES                        ",
+                                                        "           (@id_formulario           ",
+                                                        "           ,@id_perfil          ",                                                     
+                                                        "           ,@borrado)               ");
+
+                    insertDetalle.Parameters.AddWithValue("id_perfil", perfil.Id_Perfil);
+                    insertDetalle.Parameters.AddWithValue("id_formulario", permisoDetalle.Formulario.Id_Formulario);
+                    insertDetalle.Parameters.AddWithValue("borrado", false);
+
+                    insertDetalle.ExecuteNonQuery();
+                }
+
+                dbTransaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                dbTransaction.Rollback();
+                throw ex;
+            }
+            return true;
+        }
         public IList<Perfil> GetAll()
         {
             List<Perfil> listadoPerfiles = new List<Perfil>();
@@ -91,18 +171,18 @@ namespace TpPav.DataAccessLayer
         }
 
 
-        internal bool Create(Perfil oPerfil)
-        {
-            string str_sql = "     INSERT INTO Perfiles (nombre, borrado)" +
-                             "     VALUES ( @nombre, 0)";
+        //internal bool Create(Perfil oPerfil)
+        //{
+        //    string str_sql = "     INSERT INTO Perfiles (nombre, borrado)" +
+        //                     "     VALUES ( @nombre, 0)";
 
-            var parametros = new Dictionary<string, object>();
-            parametros.Add("nombre", oPerfil.Nombre);
+        //    var parametros = new Dictionary<string, object>();
+        //    parametros.Add("nombre", oPerfil.Nombre);
 
 
-            // Si una fila es afectada por la inserción retorna TRUE. Caso contrario FALSE
-            return (DataManager.GetInstance().EjecutarSql(str_sql, parametros) == 1);
-        }
+        //    // Si una fila es afectada por la inserción retorna TRUE. Caso contrario FALSE
+        //    return (DataManager.GetInstance().EjecutarSql(str_sql, parametros) == 1);
+        //}
 
         internal bool Update(Perfil oPerfil)
         {
