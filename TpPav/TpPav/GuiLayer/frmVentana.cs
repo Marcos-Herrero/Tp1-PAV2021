@@ -49,7 +49,7 @@ namespace TpPav.GuiLayer
 
         private void formulariosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmPerfiles frmPer = new frmPerfiles();
+            frmActualizar frmPer = new frmActualizar();
             frmPer.ShowDialog();
         }
 

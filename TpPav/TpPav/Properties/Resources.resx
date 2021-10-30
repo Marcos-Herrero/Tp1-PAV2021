@@ -127,6 +127,9 @@
   <data name="cabecera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cabecera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cancelar3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\cancelar3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cerrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cerrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,8 +145,14 @@
   <data name="Empty Recycle Bin 2000" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Empty Recycle Bin 2000.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="grabar3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\grabar3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nuevo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\nuevo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

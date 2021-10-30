@@ -140,13 +140,15 @@ namespace TpPav
             {
                 btnModificar.Enabled = true;
             }
+            if (btnEliminar.Enabled == false)
+                btnEliminar.Enabled = true;
         }
 
        
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            this.Close();
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -157,6 +159,26 @@ namespace TpPav
             cboPerfil.Text = "";
         }
 
-       
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Usuario consulta = new Usuario();
+                consulta.Id_Usuario = (int)dgvUsuarios.SelectedCells[0].Value;
+                consulta.UsuarioNombre = dgvUsuarios.SelectedCells[2].Value.ToString();
+                consulta.Password = dgvUsuarios.SelectedCells[3].Value.ToString();
+                consulta.Email = dgvUsuarios.SelectedCells[4].Value.ToString();
+                consulta.Estado = dgvUsuarios.SelectedCells[5].Value.ToString();
+
+
+                if (oUsuarioService.EliminarUsuario(consulta))
+                {
+                    MessageBox.Show("Usuario Borrado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+            }
+            catch { }
+            
+        }
     }
 }

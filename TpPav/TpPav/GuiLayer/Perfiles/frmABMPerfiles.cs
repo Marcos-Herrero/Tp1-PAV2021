@@ -165,7 +165,7 @@ namespace TpPav.GUILayer.Usuarios
 
         private bool ExistePerfil()
         {
-            return oPerfilService.ObtenerPErfil(txtNombre.Text) != null;
+            return oPerfilService.ObtenerPerfil(txtNombre.Text) != null;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

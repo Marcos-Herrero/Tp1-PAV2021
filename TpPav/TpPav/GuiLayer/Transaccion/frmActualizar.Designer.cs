@@ -3,6 +3,7 @@ namespace TpPav
 {
     partial class frmActualizar
     {
+        //cambio para que se suba en el repositorio
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -29,250 +30,253 @@ namespace TpPav
         /// </summary>
         private void InitializeComponent()
         {
+            
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.lblPerfil = new System.Windows.Forms.Label();
+            this.dpbDetalle = new System.Windows.Forms.GroupBox();
+            this._btnCancelar = new System.Windows.Forms.Button();
+            this._btnQuitar = new System.Windows.Forms.Button();
+            this._btnAgregar = new System.Windows.Forms.Button();
+            this.dgvDetalle = new System.Windows.Forms.DataGridView();
+            this.NroForm = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._lblFormulario = new System.Windows.Forms.Label();
+            this._cboFormularios = new System.Windows.Forms.ComboBox();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnGrabar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.btnConfirmar = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.lblUsuarios = new System.Windows.Forms.Label();
-            this.cboUsuario = new System.Windows.Forms.ComboBox();
-            this.cboEstado = new System.Windows.Forms.ComboBox();
-            this.cboPerfil = new System.Windows.Forms.ComboBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.txtPerfil = new System.Windows.Forms.TextBox();
+            this.dpbDetalle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblPerfil
+            // 
+            this.lblPerfil.AutoSize = true;
+            this.lblPerfil.Location = new System.Drawing.Point(60, 38);
+            this.lblPerfil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPerfil.Name = "lblPerfil";
+            this.lblPerfil.Size = new System.Drawing.Size(45, 20);
+            this.lblPerfil.TabIndex = 0;
+            this.lblPerfil.Text = "Perfil:";
+            // 
+            // dpbDetalle
+            // 
+            this.dpbDetalle.Controls.Add(this._btnCancelar);
+            this.dpbDetalle.Controls.Add(this._btnQuitar);
+            this.dpbDetalle.Controls.Add(this._btnAgregar);
+            this.dpbDetalle.Controls.Add(this.dgvDetalle);
+            this.dpbDetalle.Controls.Add(this._lblFormulario);
+            this.dpbDetalle.Controls.Add(this._cboFormularios);
+            this.dpbDetalle.Location = new System.Drawing.Point(16, 94);
+            this.dpbDetalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dpbDetalle.Name = "dpbDetalle";
+            this.dpbDetalle.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dpbDetalle.Size = new System.Drawing.Size(350, 634);
+            this.dpbDetalle.TabIndex = 7;
+            this.dpbDetalle.TabStop = false;
+            this.dpbDetalle.Text = "Detalle Formularios";
+            // 
+            // _btnCancelar
+            // 
+            this._btnCancelar.Image = global::TpPav.Properties.Resources.cancelar3;
+            this._btnCancelar.Location = new System.Drawing.Point(221, 91);
+            this._btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this._btnCancelar.Name = "_btnCancelar";
+            this._btnCancelar.Size = new System.Drawing.Size(51, 55);
+            this._btnCancelar.TabIndex = 7;
+            this._btnCancelar.UseVisualStyleBackColor = true;
+            this._btnCancelar.Click += new System.EventHandler(this._btnCancelar_Click);
+            // 
+            // _btnQuitar
+            // 
+            this._btnQuitar.Image = global::TpPav.Properties.Resources.eliminar;
+            this._btnQuitar.Location = new System.Drawing.Point(162, 91);
+            this._btnQuitar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this._btnQuitar.Name = "_btnQuitar";
+            this._btnQuitar.Size = new System.Drawing.Size(51, 55);
+            this._btnQuitar.TabIndex = 6;
+            this._btnQuitar.UseVisualStyleBackColor = true;
+            this._btnQuitar.Click += new System.EventHandler(this._btnQuitar_Click);
+            // 
+            // _btnAgregar
+            // 
+            this._btnAgregar.Image = global::TpPav.Properties.Resources.agregar;
+            this._btnAgregar.Location = new System.Drawing.Point(106, 91);
+            this._btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this._btnAgregar.Name = "_btnAgregar";
+            this._btnAgregar.Size = new System.Drawing.Size(48, 55);
+            this._btnAgregar.TabIndex = 5;
+            this._btnAgregar.UseVisualStyleBackColor = true;
+            this._btnAgregar.Click += new System.EventHandler(this._btnAgregar_Click);
+            // 
+            // dgvDetalle
+            // 
+            this.dgvDetalle.AllowUserToAddRows = false;
+            this.dgvDetalle.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDetalle.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NroForm,
+            this.Nombre});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDetalle.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvDetalle.Location = new System.Drawing.Point(18, 178);
+            this.dgvDetalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvDetalle.MultiSelect = false;
+            this.dgvDetalle.Name = "dgvDetalle";
+            this.dgvDetalle.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDetalle.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvDetalle.RowHeadersWidth = 70;
+            this.dgvDetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDetalle.Size = new System.Drawing.Size(312, 388);
+            this.dgvDetalle.TabIndex = 7;
+           
+            // NroForm
+            // 
+            this.NroForm.DataPropertyName = "Id_Formulario";
+            this.NroForm.HeaderText = "Nro. Form";
+            this.NroForm.MinimumWidth = 6;
+            this.NroForm.Name = "Id_Formulario";
+            this.NroForm.ReadOnly = true;
+            this.NroForm.Width = 70;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.HeaderText = "Nombre Formulario";
+            this.Nombre.MinimumWidth = 6;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.Width = 70;
+            // 
+            // _lblFormulario
+            // 
+            this._lblFormulario.AutoSize = true;
+            this._lblFormulario.Location = new System.Drawing.Point(11, 49);
+            this._lblFormulario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this._lblFormulario.Name = "_lblFormulario";
+            this._lblFormulario.Size = new System.Drawing.Size(84, 20);
+            this._lblFormulario.TabIndex = 1;
+            this._lblFormulario.Text = "Formulario:";
+            // 
+            // _cboFormularios
+            // 
+            this._cboFormularios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this._cboFormularios.FormattingEnabled = true;
+            this._cboFormularios.Location = new System.Drawing.Point(96, 40);
+            this._cboFormularios.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this._cboFormularios.Name = "_cboFormularios";
+            this._cboFormularios.Size = new System.Drawing.Size(182, 28);
+            this._cboFormularios.TabIndex = 0;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Image = global::TpPav.Properties.Resources.nuevo1;
+            this.btnNuevo.Location = new System.Drawing.Point(16, 760);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(100, 55);
+            this.btnNuevo.TabIndex = 13;
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
+            // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Image = global::TpPav.Properties.Resources.grabar3;
+            this.btnGrabar.Location = new System.Drawing.Point(124, 761);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(100, 54);
+            this.btnGrabar.TabIndex = 14;
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.BtnGrabar_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(813, 555);
+            this.btnSalir.Image = global::TpPav.Properties.Resources.salir;
+            this.btnSalir.Location = new System.Drawing.Point(277, 760);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(107, 38);
-            this.btnSalir.TabIndex = 17;
-            this.btnSalir.Text = "Salir";
+            this.btnSalir.Size = new System.Drawing.Size(100, 54);
+            this.btnSalir.TabIndex = 15;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
-            // btnConfirmar
+            // txtPerfil
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(657, 555);
-            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(107, 38);
-            this.btnConfirmar.TabIndex = 16;
-            this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = true;
-            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnEditar);
-            this.groupBox1.Controls.Add(this.lblUsuarios);
-            this.groupBox1.Controls.Add(this.cboUsuario);
-            this.groupBox1.Controls.Add(this.cboEstado);
-            this.groupBox1.Controls.Add(this.cboPerfil);
-            this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.txtId);
-            this.groupBox1.Controls.Add(this.txtPassword);
-            this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(51, 47);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(829, 478);
-            this.groupBox1.TabIndex = 15;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Modificar Usuario";
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Location = new System.Drawing.Point(477, 34);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(112, 34);
-            this.btnEditar.TabIndex = 27;
-            this.btnEditar.Text = "Editar";
-            this.btnEditar.UseVisualStyleBackColor = true;
-            // 
-            // lblUsuarios
-            // 
-            this.lblUsuarios.AutoSize = true;
-            this.lblUsuarios.Location = new System.Drawing.Point(95, 42);
-            this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(84, 25);
-            this.lblUsuarios.TabIndex = 26;
-            this.lblUsuarios.Text = "Usuarios:";
-            // 
-            // cboUsuario
-            // 
-            this.cboUsuario.FormattingEnabled = true;
-            this.cboUsuario.Location = new System.Drawing.Point(211, 34);
-            this.cboUsuario.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cboUsuario.Name = "cboUsuario";
-            this.cboUsuario.Size = new System.Drawing.Size(220, 33);
-            this.cboUsuario.TabIndex = 25;
-            // 
-            // cboEstado
-            // 
-            this.cboEstado.FormattingEnabled = true;
-            this.cboEstado.Location = new System.Drawing.Point(95, 310);
-            this.cboEstado.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(220, 33);
-            this.cboEstado.TabIndex = 24;
-            // 
-            // cboPerfil
-            // 
-            this.cboPerfil.FormattingEnabled = true;
-            this.cboPerfil.Location = new System.Drawing.Point(95, 224);
-            this.cboPerfil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cboPerfil.Name = "cboPerfil";
-            this.cboPerfil.Size = new System.Drawing.Size(220, 33);
-            this.cboPerfil.TabIndex = 23;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(95, 269);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(220, 31);
-            this.txtEmail.TabIndex = 22;
-            // 
-            // txtId
-            // 
-            this.txtId.Enabled = false;
-            this.txtId.Location = new System.Drawing.Point(95, 183);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(220, 31);
-            this.txtId.TabIndex = 20;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(95, 142);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(220, 31);
-            this.txtPassword.TabIndex = 19;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(95, 101);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(220, 31);
-            this.txtNombre.TabIndex = 18;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 275);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 25);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "E-mail";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(35, 232);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 25);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Perfil";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 318);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 25);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Estado";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(55, 189);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 25);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "ID";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(0, 148);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 25);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Password";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 107);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 25);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Nombre";
+            this.txtPerfil.Enabled = false;
+            this.txtPerfil.Location = new System.Drawing.Point(112, 31);
+            this.txtPerfil.Name = "txtPerfil";
+            this.txtPerfil.Size = new System.Drawing.Size(182, 27);
+            this.txtPerfil.TabIndex = 16;
             // 
             // frmActualizar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 611);
+            this.ClientSize = new System.Drawing.Size(390, 871);
+            this.Controls.Add(this.txtPerfil);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.btnConfirmar);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnGrabar);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.dpbDetalle);
+            this.Controls.Add(this.lblPerfil);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmActualizar";
-            this.Text = "Modificar";
-            this.Load += new System.EventHandler(this.frmModificar_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Alta Perfil";
+            this.Load += new System.EventHandler(this.frmActualizar_Load);
+            this.dpbDetalle.ResumeLayout(false);
+            this.dpbDetalle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Label lblPerfil;
+        private System.Windows.Forms.GroupBox dpbDetalle;
+        private System.Windows.Forms.Button _btnCancelar;
+        private System.Windows.Forms.Button _btnQuitar;
+        private System.Windows.Forms.Button _btnAgregar;
+        private System.Windows.Forms.DataGridView dgvDetalle;
+        private System.Windows.Forms.Label _lblFormulario;
+        private System.Windows.Forms.ComboBox _cboFormularios;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnConfirmar;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.ComboBox cboEstado;
-        public System.Windows.Forms.ComboBox cboPerfil;
-        public System.Windows.Forms.TextBox txtEmail;
-        public System.Windows.Forms.TextBox txtId;
-        public System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label lblUsuarios;
-        public System.Windows.Forms.ComboBox cboUsuario;
-        public System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NroForm;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.TextBox txtPerfil;
     }
 }

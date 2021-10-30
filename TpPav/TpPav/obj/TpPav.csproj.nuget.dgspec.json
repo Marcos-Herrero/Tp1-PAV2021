@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ecassini\\Desktop\\pav1_2021\\tp\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj": {}
+    "C:\\Users\\ecassini\\Desktop\\pav1_2021\\ddd\\marcos\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ecassini\\Desktop\\pav1_2021\\tp\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj": {
+    "C:\\Users\\ecassini\\Desktop\\pav1_2021\\ddd\\marcos\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecassini\\Desktop\\pav1_2021\\tp\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
+        "projectUniqueName": "C:\\Users\\ecassini\\Desktop\\pav1_2021\\ddd\\marcos\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
         "projectName": "TpPav",
-        "projectPath": "C:\\Users\\ecassini\\Desktop\\pav1_2021\\tp\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
+        "projectPath": "C:\\Users\\ecassini\\Desktop\\pav1_2021\\ddd\\marcos\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
         "packagesPath": "C:\\Users\\ecassini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecassini\\Desktop\\pav1_2021\\tp\\Tp1-PAV2021\\TpPav\\TpPav\\obj\\",
+        "outputPath": "C:\\Users\\ecassini\\Desktop\\pav1_2021\\ddd\\marcos\\Tp1-PAV2021\\TpPav\\TpPav\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

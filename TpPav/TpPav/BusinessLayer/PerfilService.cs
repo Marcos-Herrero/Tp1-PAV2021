@@ -34,7 +34,7 @@ namespace TpPav.BusinessLayer
         {
             return oPerfilDao.Delete(oPerfil);
         }
-        internal object ObtenerPErfil(string nombre)
+        internal object ObtenerPerfil(string nombre)
         {
 
             return oPerfilDao.GetPerfil(nombre);
@@ -43,6 +43,20 @@ namespace TpPav.BusinessLayer
         public IList<Perfil> ObtenerPerfilesFiltro(Dictionary<string, object> filtros)
         {
             return oPerfilDao.GetByFilters(filtros);
+        }
+        internal bool ValidarDatos(Perfil per)
+        {
+            if (per.DetallePermisos.Count == 0)
+            {
+               throw new Exception("Debe selecionar al menos un formulario para el perfil.");
+            }
+            Perfil validacion= (Perfil)ObtenerPerfil(per.Nombre);
+            if(validacion!=null)
+            {
+                throw new Exception("El nombre del perfil ya existe.");
+            }
+
+            return true;
         }
     }
 }
