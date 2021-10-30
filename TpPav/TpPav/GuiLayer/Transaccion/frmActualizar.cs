@@ -8,12 +8,16 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using TpPav.BusinessLayer;
 using TpPav.Entities;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace TpPav
 {
     public partial class frmActualizar : Form
     {
-        private readonly BindingList<Permiso> listaPermisos;
+        private BindingList<Permiso> listaPermisos;
         private UsuarioService oUsuarioService;
         private PerfilService oPerfilService;
         private FormularioService oFormularioService;
@@ -23,20 +27,30 @@ namespace TpPav
             oUsuarioService = new UsuarioService();
             oPerfilService = new PerfilService();
             oFormularioService = new FormularioService();
+            listaPermisos = new BindingList<Permiso>();
+            dgvDetalle.AutoGenerateColumns = false;
         }
 
         private void frmModificar_Load(object sender, EventArgs e)
         {
             LlenarCombo(_cboFormularios, oFormularioService.ObtenerTodos(), "Nombre", "id_Formulario");
+            dgvDetalle.DataSource = listaPermisos;
+            InicializarFormulario();
+
         }
         private void _btnAgregar_Click(object sender, EventArgs e)
         {
 
             var form = (Formulario)_cboFormularios.SelectedItem;
+           
             listaPermisos.Add(new Permiso()
             {
-                Formulario = form                
-            });           
+                Formulario = form 
+                
+            });
+           
+
+            MessageBox.Show(listaPermisos.ToString());
 
             InicializarDetalle();
         }
@@ -134,6 +148,6 @@ namespace TpPav
             InicializarDetalle();
         }
 
-
+       
     }
 }

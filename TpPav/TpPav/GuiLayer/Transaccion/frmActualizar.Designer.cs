@@ -30,6 +30,10 @@ namespace TpPav
         /// </summary>
         private void InitializeComponent()
         {
+            
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -69,12 +73,11 @@ namespace TpPav
             this.dpbDetalle.Controls.Add(this.dgvDetalle);
             this.dpbDetalle.Controls.Add(this._lblFormulario);
             this.dpbDetalle.Controls.Add(this._cboFormularios);
-            this.dpbDetalle.Enabled = false;
             this.dpbDetalle.Location = new System.Drawing.Point(16, 94);
             this.dpbDetalle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dpbDetalle.Name = "dpbDetalle";
             this.dpbDetalle.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dpbDetalle.Size = new System.Drawing.Size(1036, 634);
+            this.dpbDetalle.Size = new System.Drawing.Size(350, 634);
             this.dpbDetalle.TabIndex = 7;
             this.dpbDetalle.TabStop = false;
             this.dpbDetalle.Text = "Detalle Formularios";
@@ -153,13 +156,13 @@ namespace TpPav
             this.dgvDetalle.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDetalle.Size = new System.Drawing.Size(312, 388);
             this.dgvDetalle.TabIndex = 7;
-            // 
+           
             // NroForm
             // 
-            this.NroForm.DataPropertyName = "NroForm";
+            this.NroForm.DataPropertyName = "Id_Formulario";
             this.NroForm.HeaderText = "Nro. Form";
             this.NroForm.MinimumWidth = 6;
-            this.NroForm.Name = "NroForm";
+            this.NroForm.Name = "Id_Formulario";
             this.NroForm.ReadOnly = true;
             this.NroForm.Width = 70;
             // 
@@ -250,7 +253,7 @@ namespace TpPav
             this.Name = "frmActualizar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Alta Perfil";
-            this.Load += new System.EventHandler(this.frmModificar_Load);
+            this.Load += new System.EventHandler(this.frmActualizar_Load);
             this.dpbDetalle.ResumeLayout(false);
             this.dpbDetalle.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).EndInit();
