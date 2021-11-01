@@ -9,6 +9,8 @@ namespace TpPav.Entities
         public string Nombre { get; set; }
         public bool borrado { get; set; }
         public IList<Permiso> DetallePermisos { get; set; }
+
+
         public override string ToString()
         {
             return Nombre;

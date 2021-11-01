@@ -15,7 +15,7 @@ namespace TpPav
         public DataManager()
         {
             dbConnection = new SqlConnection();
-            var string_conexion = "server=NBAR15232;database=DB_TP; integrated security = true";
+            var string_conexion = "Data Source=DESKTOP-82E3KBS\\SQLEXPRESS;Initial Catalog=DB_TP;Integrated Security=true;"; 
             dbConnection.ConnectionString = string_conexion;
 
         }

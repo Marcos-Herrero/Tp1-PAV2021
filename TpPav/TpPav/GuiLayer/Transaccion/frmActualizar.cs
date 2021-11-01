@@ -17,28 +17,40 @@ namespace TpPav
         private UsuarioService oUsuarioService;
         private PerfilService oPerfilService;
         private FormularioService oFormularioService;
+
         public frmActualizar()
         {
             InitializeComponent();
             oUsuarioService = new UsuarioService();
             oPerfilService = new PerfilService();
             oFormularioService = new FormularioService();
+            listaPermisos = new BindingList<Permiso>();
+
         }
 
-        private void frmModificar_Load(object sender, EventArgs e)
+        private void frmActualizar_Load(object sender, EventArgs e)
         {
             LlenarCombo(_cboFormularios, oFormularioService.ObtenerTodos(), "Nombre", "id_Formulario");
+            dgvDetalle.DataSource = listaPermisos;
+            
         }
         private void _btnAgregar_Click(object sender, EventArgs e)
         {
 
-            var form = (Formulario)_cboFormularios.SelectedItem;
-            listaPermisos.Add(new Permiso()
-            {
-                Formulario = form                
-            });           
 
+            var form = (Formulario)_cboFormularios.SelectedItem;
+            Perfil per = new Perfil();
+            per.Nombre = txtPerfil.Text;
+            per.borrado = false;
+
+            listaPermisos.Add(new Permiso()            
+            {
+                Formulario = form,
+                Perfil = per
+                            
+        }) ;
             InicializarDetalle();
+
         }
 
         private void BtnGrabar_Click(object sender, EventArgs e)
@@ -78,17 +90,16 @@ namespace TpPav
 
         private void InicializarFormulario()
         {
-            txtPerfil.Enabled = true;
-            _btnAgregar.Enabled = true;             
-            _cboFormularios.SelectedIndex = -1;          
+                     
             InicializarDetalle();
 
-            dgvDetalle.DataSource = null;
+            
 
         }
         private void InicializarDetalle()
         {
-            _cboFormularios.SelectedIndex = -1;           
+            _cboFormularios.SelectedIndex = -1;
+            
         }
         private void _cboFormularios_SelectedIndexChanged(object sender, EventArgs e)
         {

@@ -11,7 +11,7 @@ namespace TpPav.DataAccessLayer
     {
         internal bool Create(Perfil perfil)
         {
-            var string_conexion = "Data Source=NBAR15232;Initial Catalog=SistemaVentas;Integrated Security=true;";
+            var string_conexion = "Data Source=DESKTOP-82E3KBS\\SQLEXPRESS;Initial Catalog=DB_TP;Integrated Security=true;";
 
             // Se utiliza para sentencias SQL del tipo “Insert/Update/Delete”
             SqlConnection dbConnection = new SqlConnection();
@@ -30,16 +30,16 @@ namespace TpPav.DataAccessLayer
                 insertPerfil.Transaction = dbTransaction;
                 // Establece la instrucción a ejecutar
                 insertPerfil.CommandText = string.Concat("INSERT INTO [dbo].[Perfiles]",
-                                            "           ([nombre]   ",                                          
+                                            "           ([nombre]   ",
                                             "           ,[borrado])      ",
                                             "     VALUES                 ",
-                                            "           (@nombre  ",                                          
+                                            "           (@nombre  ",
                                             "           ,@borrado)       ");
 
 
 
                 //Agregamos los parametros
-                insertPerfil.Parameters.AddWithValue("Nombre", perfil.Nombre);                
+                insertPerfil.Parameters.AddWithValue("Nombre", perfil.Nombre);
                 insertPerfil.Parameters.AddWithValue("borrado", false);
 
                 insertPerfil.ExecuteNonQuery();
@@ -88,7 +88,9 @@ namespace TpPav.DataAccessLayer
                 throw ex;
             }
             return true;
+            
         }
+
         public IList<Perfil> GetAll()
         {
             List<Perfil> listadoPerfiles = new List<Perfil>();

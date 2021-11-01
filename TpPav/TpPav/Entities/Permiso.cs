@@ -9,6 +9,7 @@ namespace TpPav.Entities
         public Perfil Perfil { get; set; }
         //public int IdFactura { get; set; }
         public Formulario Formulario { get; set; }
-                
+
+
     }
 }
