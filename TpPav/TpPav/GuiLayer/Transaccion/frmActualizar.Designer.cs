@@ -32,6 +32,7 @@ namespace TpPav
         {
             this.lblPerfil = new System.Windows.Forms.Label();
             this.dpbDetalle = new System.Windows.Forms.GroupBox();
+            this.dgvDetalle = new System.Windows.Forms.DataGridView();
             this._btnCancelar = new System.Windows.Forms.Button();
             this._btnQuitar = new System.Windows.Forms.Button();
             this._btnAgregar = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@ namespace TpPav
             this.btnGrabar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.txtPerfil = new System.Windows.Forms.TextBox();
-            this.dgvDetalle = new System.Windows.Forms.DataGridView();
             this.dpbDetalle.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalle)).BeginInit();
             this.SuspendLayout();
@@ -49,10 +49,10 @@ namespace TpPav
             // lblPerfil
             // 
             this.lblPerfil.AutoSize = true;
-            this.lblPerfil.Location = new System.Drawing.Point(52, 28);
-            this.lblPerfil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPerfil.Location = new System.Drawing.Point(59, 37);
+            this.lblPerfil.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.lblPerfil.Name = "lblPerfil";
-            this.lblPerfil.Size = new System.Drawing.Size(37, 15);
+            this.lblPerfil.Size = new System.Drawing.Size(45, 20);
             this.lblPerfil.TabIndex = 0;
             this.lblPerfil.Text = "Perfil:";
             // 
@@ -64,22 +64,34 @@ namespace TpPav
             this.dpbDetalle.Controls.Add(this._btnAgregar);
             this.dpbDetalle.Controls.Add(this._lblFormulario);
             this.dpbDetalle.Controls.Add(this._cboFormularios);
-            this.dpbDetalle.Location = new System.Drawing.Point(14, 70);
-            this.dpbDetalle.Margin = new System.Windows.Forms.Padding(4);
+            this.dpbDetalle.Enabled = false;
+            this.dpbDetalle.Location = new System.Drawing.Point(16, 93);
+            this.dpbDetalle.Margin = new System.Windows.Forms.Padding(5);
             this.dpbDetalle.Name = "dpbDetalle";
-            this.dpbDetalle.Padding = new System.Windows.Forms.Padding(4);
-            this.dpbDetalle.Size = new System.Drawing.Size(293, 439);
+            this.dpbDetalle.Padding = new System.Windows.Forms.Padding(5);
+            this.dpbDetalle.Size = new System.Drawing.Size(335, 585);
             this.dpbDetalle.TabIndex = 7;
             this.dpbDetalle.TabStop = false;
             this.dpbDetalle.Text = "Detalle Formularios";
             // 
+            // dgvDetalle
+            // 
+            this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalle.Location = new System.Drawing.Point(25, 155);
+            this.dgvDetalle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dgvDetalle.Name = "dgvDetalle";
+            this.dgvDetalle.RowHeadersWidth = 51;
+            this.dgvDetalle.RowTemplate.Height = 25;
+            this.dgvDetalle.Size = new System.Drawing.Size(302, 421);
+            this.dgvDetalle.TabIndex = 8;
+            // 
             // _btnCancelar
             // 
             this._btnCancelar.Image = global::TpPav.Properties.Resources.cancelar3;
-            this._btnCancelar.Location = new System.Drawing.Point(193, 68);
-            this._btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this._btnCancelar.Location = new System.Drawing.Point(221, 91);
+            this._btnCancelar.Margin = new System.Windows.Forms.Padding(5);
             this._btnCancelar.Name = "_btnCancelar";
-            this._btnCancelar.Size = new System.Drawing.Size(45, 41);
+            this._btnCancelar.Size = new System.Drawing.Size(51, 55);
             this._btnCancelar.TabIndex = 7;
             this._btnCancelar.UseVisualStyleBackColor = true;
             this._btnCancelar.Click += new System.EventHandler(this._btnCancelar_Click);
@@ -87,10 +99,10 @@ namespace TpPav
             // _btnQuitar
             // 
             this._btnQuitar.Image = global::TpPav.Properties.Resources.eliminar;
-            this._btnQuitar.Location = new System.Drawing.Point(142, 68);
-            this._btnQuitar.Margin = new System.Windows.Forms.Padding(4);
+            this._btnQuitar.Location = new System.Drawing.Point(162, 91);
+            this._btnQuitar.Margin = new System.Windows.Forms.Padding(5);
             this._btnQuitar.Name = "_btnQuitar";
-            this._btnQuitar.Size = new System.Drawing.Size(45, 41);
+            this._btnQuitar.Size = new System.Drawing.Size(51, 55);
             this._btnQuitar.TabIndex = 6;
             this._btnQuitar.UseVisualStyleBackColor = true;
             this._btnQuitar.Click += new System.EventHandler(this._btnQuitar_Click);
@@ -98,10 +110,10 @@ namespace TpPav
             // _btnAgregar
             // 
             this._btnAgregar.Image = global::TpPav.Properties.Resources.agregar;
-            this._btnAgregar.Location = new System.Drawing.Point(93, 68);
-            this._btnAgregar.Margin = new System.Windows.Forms.Padding(4);
+            this._btnAgregar.Location = new System.Drawing.Point(106, 91);
+            this._btnAgregar.Margin = new System.Windows.Forms.Padding(5);
             this._btnAgregar.Name = "_btnAgregar";
-            this._btnAgregar.Size = new System.Drawing.Size(42, 41);
+            this._btnAgregar.Size = new System.Drawing.Size(48, 55);
             this._btnAgregar.TabIndex = 5;
             this._btnAgregar.UseVisualStyleBackColor = true;
             this._btnAgregar.Click += new System.EventHandler(this._btnAgregar_Click);
@@ -109,10 +121,10 @@ namespace TpPav
             // _lblFormulario
             // 
             this._lblFormulario.AutoSize = true;
-            this._lblFormulario.Location = new System.Drawing.Point(10, 37);
-            this._lblFormulario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this._lblFormulario.Location = new System.Drawing.Point(11, 49);
+            this._lblFormulario.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this._lblFormulario.Name = "_lblFormulario";
-            this._lblFormulario.Size = new System.Drawing.Size(68, 15);
+            this._lblFormulario.Size = new System.Drawing.Size(84, 20);
             this._lblFormulario.TabIndex = 1;
             this._lblFormulario.Text = "Formulario:";
             // 
@@ -120,19 +132,20 @@ namespace TpPav
             // 
             this._cboFormularios.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this._cboFormularios.FormattingEnabled = true;
-            this._cboFormularios.Location = new System.Drawing.Point(84, 30);
-            this._cboFormularios.Margin = new System.Windows.Forms.Padding(4);
+            this._cboFormularios.Location = new System.Drawing.Point(96, 40);
+            this._cboFormularios.Margin = new System.Windows.Forms.Padding(5);
             this._cboFormularios.Name = "_cboFormularios";
-            this._cboFormularios.Size = new System.Drawing.Size(160, 23);
+            this._cboFormularios.Size = new System.Drawing.Size(182, 28);
             this._cboFormularios.TabIndex = 0;
+            this._cboFormularios.Click += new System.EventHandler(this._cboFormularios_Click);
             // 
             // btnNuevo
             // 
             this.btnNuevo.Image = global::TpPav.Properties.Resources.nuevo1;
-            this.btnNuevo.Location = new System.Drawing.Point(14, 570);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNuevo.Location = new System.Drawing.Point(16, 760);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(5);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(88, 41);
+            this.btnNuevo.Size = new System.Drawing.Size(101, 55);
             this.btnNuevo.TabIndex = 13;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.BtnNuevo_Click);
@@ -140,10 +153,10 @@ namespace TpPav
             // btnGrabar
             // 
             this.btnGrabar.Image = global::TpPav.Properties.Resources.grabar3;
-            this.btnGrabar.Location = new System.Drawing.Point(108, 571);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnGrabar.Location = new System.Drawing.Point(123, 761);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(5);
             this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(88, 40);
+            this.btnGrabar.Size = new System.Drawing.Size(101, 53);
             this.btnGrabar.TabIndex = 14;
             this.btnGrabar.UseVisualStyleBackColor = true;
             this.btnGrabar.Click += new System.EventHandler(this.BtnGrabar_Click);
@@ -151,43 +164,35 @@ namespace TpPav
             // btnSalir
             // 
             this.btnSalir.Image = global::TpPav.Properties.Resources.salir;
-            this.btnSalir.Location = new System.Drawing.Point(242, 570);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Location = new System.Drawing.Point(277, 760);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(5);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(88, 40);
+            this.btnSalir.Size = new System.Drawing.Size(101, 53);
             this.btnSalir.TabIndex = 15;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // txtPerfil
             // 
-            this.txtPerfil.Location = new System.Drawing.Point(98, 23);
-            this.txtPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPerfil.Enabled = false;
+            this.txtPerfil.Location = new System.Drawing.Point(112, 31);
             this.txtPerfil.Name = "txtPerfil";
-            this.txtPerfil.Size = new System.Drawing.Size(160, 23);
+            this.txtPerfil.Size = new System.Drawing.Size(182, 27);
             this.txtPerfil.TabIndex = 16;
-            // 
-            // dgvDetalle
-            // 
-            this.dgvDetalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDetalle.Location = new System.Drawing.Point(22, 116);
-            this.dgvDetalle.Name = "dgvDetalle";
-            this.dgvDetalle.RowTemplate.Height = 25;
-            this.dgvDetalle.Size = new System.Drawing.Size(264, 316);
-            this.dgvDetalle.TabIndex = 8;
+            this.txtPerfil.TextChanged += new System.EventHandler(this.txtPerfil_TextChanged);
             // 
             // frmActualizar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 671);
+            this.ClientSize = new System.Drawing.Size(430, 895);
             this.Controls.Add(this.txtPerfil);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dpbDetalle);
             this.Controls.Add(this.lblPerfil);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmActualizar";

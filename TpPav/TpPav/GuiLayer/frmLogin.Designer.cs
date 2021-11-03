@@ -29,6 +29,7 @@ namespace TpPav.GuiLayer
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -39,9 +40,10 @@ namespace TpPav.GuiLayer
             // 
             // btnIngresar
             // 
-            this.btnIngresar.Location = new System.Drawing.Point(228, 202);
+            this.btnIngresar.Location = new System.Drawing.Point(354, 151);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresar.Size = new System.Drawing.Size(86, 31);
             this.btnIngresar.TabIndex = 0;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
@@ -49,9 +51,10 @@ namespace TpPav.GuiLayer
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(325, 202);
+            this.btnSalir.Location = new System.Drawing.Point(465, 151);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(86, 31);
             this.btnSalir.TabIndex = 1;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -60,47 +63,61 @@ namespace TpPav.GuiLayer
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(61, 54);
+            this.lblUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lblUsuario.Location = new System.Drawing.Point(218, 50);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(53, 15);
+            this.lblUsuario.Size = new System.Drawing.Size(66, 20);
             this.lblUsuario.TabIndex = 2;
             this.lblUsuario.Text = "Usuario :";
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Location = new System.Drawing.Point(41, 118);
+            this.lblContraseña.BackColor = System.Drawing.Color.Transparent;
+            this.lblContraseña.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblContraseña.Location = new System.Drawing.Point(194, 94);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(73, 15);
+            this.lblContraseña.Size = new System.Drawing.Size(90, 20);
             this.lblContraseña.TabIndex = 3;
             this.lblContraseña.Text = "Contraseña :";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(120, 54);
+            this.txtUsuario.Location = new System.Drawing.Point(307, 43);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(214, 23);
+            this.txtUsuario.Size = new System.Drawing.Size(244, 27);
             this.txtUsuario.TabIndex = 4;
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(120, 115);
+            this.txtContraseña.Location = new System.Drawing.Point(307, 91);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(214, 23);
+            this.txtContraseña.Size = new System.Drawing.Size(244, 27);
             this.txtContraseña.TabIndex = 5;
             this.txtContraseña.UseSystemPasswordChar = true;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 237);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::TpPav.Properties.Resources.l;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(577, 215);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIngresar);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio de sesion";

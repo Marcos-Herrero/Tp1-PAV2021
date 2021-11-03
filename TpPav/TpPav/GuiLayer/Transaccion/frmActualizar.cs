@@ -32,7 +32,8 @@ namespace TpPav
         {
             LlenarCombo(_cboFormularios, oFormularioService.ObtenerTodos(), "Nombre", "id_Formulario");
             dgvDetalle.DataSource = listaPermisos;
-            
+            this.txtPerfil.TextChanged += new System.EventHandler(this.txtPerfil_TextChanged);
+
         }
         private void _btnAgregar_Click(object sender, EventArgs e)
         {
@@ -86,6 +87,7 @@ namespace TpPav
         private void BtnNuevo_Click(object sender, EventArgs e)
         {
             InicializarFormulario();
+            txtPerfil.Enabled = true;
         }
 
         private void InicializarFormulario()
@@ -145,6 +147,14 @@ namespace TpPav
             InicializarDetalle();
         }
 
+        private void txtPerfil_TextChanged(object sender, EventArgs e)
+        {
+            dpbDetalle.Enabled = true;
+        }
 
+        private void _cboFormularios_Click(object sender, EventArgs e)
+        {
+            txtPerfil.Enabled = false;
+        }
     }
 }

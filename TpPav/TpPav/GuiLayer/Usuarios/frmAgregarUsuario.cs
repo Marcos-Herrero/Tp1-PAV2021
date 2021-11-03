@@ -25,7 +25,6 @@ namespace TpPav
         {
             
             LlenarCombo(cboPerfil, oPerfilService.ObtenerTodos(), "Nombre", "Id_Perfil");
-            //LlenarCombo(cboEstado, oUsuarioService.ObtenerEstados(), "Estado", "");
             cboEstado.DisplayMember = "Text";
             cboEstado.ValueMember = "Value";
             cboEstado.SelectedIndex = cboEstado.Items.IndexOf('N');

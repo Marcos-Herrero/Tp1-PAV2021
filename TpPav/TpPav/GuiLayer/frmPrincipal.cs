@@ -101,38 +101,7 @@ namespace TpPav
             this.Hide();
             frm.Show();
         }
-        /*
-        private void btnEliminar_Click(System.Object sender, System.EventArgs e)
-        {
-            frmEliminar frm = new frmEliminar();            
-            frm.cboPerfil.Text = dgvUsuarios.SelectedCells[1].Value.ToString();
-            frm.txtNombre.Text = dgvUsuarios.SelectedCells[2].Value.ToString();
-            frm.txtPassword.Text = dgvUsuarios.SelectedCells[3].Value.ToString();
-            frm.txtEmail.Text = dgvUsuarios.SelectedCells[4].Value.ToString();
-            frm.cboEstado.Text = dgvUsuarios.SelectedCells[5].Value.ToString();
-            this.Hide();
-            frm.Show();
-        }*/
-
-
-
-        /*
-          private void btnQuitar_Click(System.Object sender, System.EventArgs e)
-          {
-              frmABMUsuario formulario = new frmABMUsuario();
-
-              // Asi obtenemos el item seleccionado de la grilla.
-              var usuario = (Usuario)dgvUsuarios.CurrentRow.DataBoundItem;
-
-              formulario.InicializarFormulario(frmABMUsuario.FormMode.eliminar, usuario);
-              formulario.ShowDialog();
-
-              //Forzamos el evento Click para actualizar el DataGridView.
-              btnConsultar_Click(sender, e);
-          }
-
-          */
-
+       
 
         private void dgvUsuarios_CellClick(object sender, DataGridViewCellEventArgs e)
         {

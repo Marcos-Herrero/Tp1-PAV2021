@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Text;
 using TpPav.Entities;
 
@@ -94,20 +95,91 @@ namespace TpPav.DataAccessLayer
 
         internal bool Create(Usuario oUsuario)
         {
-            string str_sql = "     INSERT INTO Usuarios (usuario, password, email, id_perfil,estado, borrado)" +
-                             "     VALUES (@usuario, @password, @email, @id_perfil, 0, @estado)";
+            var string_conexion = "Data Source=NBAR15232;Initial Catalog=DB_TP;Integrated Security=true;";
+
+            SqlConnection dbConnection = new SqlConnection();
+            SqlTransaction dbTransaction = null;
+
+            try
+            {
+                dbConnection.ConnectionString = string_conexion;
+                dbConnection.Open();
+                dbTransaction = dbConnection.BeginTransaction();
+
+                SqlCommand insertUsuario = new SqlCommand();
+
+                insertUsuario.Connection = dbConnection;
+                insertUsuario.CommandType = CommandType.Text;
+                insertUsuario.Transaction = dbTransaction;
+
+                insertUsuario.CommandText = string.Concat(" INSERT INTO Usuarios (usuario, password, email, id_perfil, borrado,estado)" +
+                             "     VALUES (@usuario, @password, @email, @id_perfil, 0, @estado)");
+
+                
+
+                insertUsuario.Parameters.AddWithValue("usuario", oUsuario.UsuarioNombre);
+                insertUsuario.Parameters.AddWithValue("password", oUsuario.Password);
+                insertUsuario.Parameters.AddWithValue("email", oUsuario.Email);
+                insertUsuario.Parameters.AddWithValue("estado", oUsuario.Estado);
+                insertUsuario.Parameters.AddWithValue("id_perfil", oUsuario.Perfil.Id_Perfil);
+                
+
+                insertUsuario.ExecuteNonQuery();
+                insertUsuario.CommandText = " SELECT @@IDENTITY";
+                var newId = insertUsuario.ExecuteScalar();
+                oUsuario.Id_Usuario = Convert.ToInt32(newId);
+
+                SqlCommand consultaIDUsuario = new SqlCommand();
+                consultaIDUsuario.Connection = dbConnection;
+                consultaIDUsuario.CommandType = CommandType.Text;
+
+                
+
+                
+                // insert historico
+                SqlCommand insertHistorico = new SqlCommand();
+                insertHistorico.Connection = dbConnection;
+                insertHistorico.CommandType = CommandType.Text;
+                insertHistorico.CommandText = " SELECT @@IDENTITY";
+                var idHistorico = insertHistorico.ExecuteScalar();               
+                HistoricoAsignaciones oHistoricoAsignaciones = new HistoricoAsignaciones();
+                oHistoricoAsignaciones.IdHistoricoAsignaciones = Convert.ToInt32(newId);
+                insertHistorico.Transaction = dbTransaction;
+                insertHistorico.CommandText = string.Concat(" INSERT INTO [dbo].[HistoricoDeAsignaciones] ",
+                                                        "           ([IdHistoricoDeAsignaciones]   ",
+                                                        "           ,[fecha_historico]         ",
+                                                        "           ,[id_perfil])             ",
+                                                        "     VALUES                        ",
+                                                        "           (@IdHistoricoDeAsignaciones           ",
+                                                        "           , ( SELECT FECHA = CONVERT(DATE, GETDATE())   )     ",
+                                                        "           ,@id_perfil)               ");
+
+                insertHistorico.Parameters.AddWithValue("IdHistoricoDeAsignaciones", oHistoricoAsignaciones.IdHistoricoAsignaciones);
+                insertHistorico.Parameters.AddWithValue("id_perfil", oUsuario.Id_Usuario);
+                insertHistorico.ExecuteNonQuery();
 
 
+                insertUsuario.Connection = dbConnection;
+                insertUsuario.CommandType = CommandType.Text;
+                insertUsuario.Transaction = dbTransaction;
 
-            var parametros = new Dictionary<string, object>();
-            parametros.Add("usuario", oUsuario.UsuarioNombre);
-            parametros.Add("password", oUsuario.Password);
-            parametros.Add("email", oUsuario.Email);
-            parametros.Add("estado", oUsuario.Estado);
-            parametros.Add("id_perfil", oUsuario.Perfil.Id_Perfil);
+                insertUsuario.CommandText = string.Concat(" UPDATE [dbo].[Usuarios]",
+                                                         " SET [IdHistoricoDeAsignaciones]= @IdHistoricoDeAsignaciones ",
+                                                         " WHERE id_usuario=@id_usuario");
 
-            // Si una fila es afectada por la inserción retorna TRUE. Caso contrario FALSE
-            return (DataManager.GetInstance().EjecutarSql(str_sql, parametros) == 1);
+
+                insertUsuario.Parameters.AddWithValue("IdHistoricoDeAsignaciones", oHistoricoAsignaciones.IdHistoricoAsignaciones);
+                insertUsuario.Parameters.AddWithValue("id_usuario", oUsuario.Id_Usuario);          
+                insertUsuario.ExecuteNonQuery();
+                dbTransaction.Commit();
+            }
+            catch (Exception ex)
+            {
+                dbTransaction.Rollback();
+                throw ex;
+            }
+            return true;
+
         }
 
         internal bool Update(Usuario oUsuario)

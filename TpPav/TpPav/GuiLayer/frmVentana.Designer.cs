@@ -45,6 +45,8 @@ namespace TpPav.GuiLayer
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ControlText;
+            this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
@@ -53,29 +55,32 @@ namespace TpPav.GuiLayer
             this.soporteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 4, 0, 4);
-            this.menuStrip1.Size = new System.Drawing.Size(1142, 37);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(914, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // archivoToolStripMenuItem
             // 
+            this.archivoToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            this.archivoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(88, 29);
+            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(81, 27);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
             // formulariosToolStripMenuItem
             // 
             this.formulariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.formulariosToolStripMenuItem1});
+            this.formulariosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.formulariosToolStripMenuItem.Name = "formulariosToolStripMenuItem";
-            this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(83, 29);
+            this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(77, 27);
             this.formulariosToolStripMenuItem.Text = "Perfiles";
             // 
             // formulariosToolStripMenuItem1
             // 
             this.formulariosToolStripMenuItem1.Name = "formulariosToolStripMenuItem1";
-            this.formulariosToolStripMenuItem1.Size = new System.Drawing.Size(266, 34);
+            this.formulariosToolStripMenuItem1.Size = new System.Drawing.Size(240, 28);
             this.formulariosToolStripMenuItem1.Text = "Administrar Perfiles";
             this.formulariosToolStripMenuItem1.Click += new System.EventHandler(this.formulariosToolStripMenuItem1_Click);
             // 
@@ -83,14 +88,15 @@ namespace TpPav.GuiLayer
             // 
             this.permisosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administrarPermisosToolStripMenuItem});
+            this.permisosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.permisosToolStripMenuItem.Name = "permisosToolStripMenuItem";
-            this.permisosToolStripMenuItem.Size = new System.Drawing.Size(99, 29);
+            this.permisosToolStripMenuItem.Size = new System.Drawing.Size(91, 27);
             this.permisosToolStripMenuItem.Text = "Permisos";
             // 
             // administrarPermisosToolStripMenuItem
             // 
             this.administrarPermisosToolStripMenuItem.Name = "administrarPermisosToolStripMenuItem";
-            this.administrarPermisosToolStripMenuItem.Size = new System.Drawing.Size(282, 34);
+            this.administrarPermisosToolStripMenuItem.Size = new System.Drawing.Size(254, 28);
             this.administrarPermisosToolStripMenuItem.Text = "Administrar Permisos";
             this.administrarPermisosToolStripMenuItem.Click += new System.EventHandler(this.administrarPermisosToolStripMenuItem_Click);
             // 
@@ -99,8 +105,9 @@ namespace TpPav.GuiLayer
             this.soporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.formulariosToolStripMenuItem3,
             this.usuariosToolStripMenuItem});
+            this.soporteToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.soporteToolStripMenuItem.Name = "soporteToolStripMenuItem";
-            this.soporteToolStripMenuItem.Size = new System.Drawing.Size(92, 29);
+            this.soporteToolStripMenuItem.Size = new System.Drawing.Size(84, 27);
             this.soporteToolStripMenuItem.Text = "Soporte";
             // 
             // formulariosToolStripMenuItem3
@@ -108,13 +115,13 @@ namespace TpPav.GuiLayer
             this.formulariosToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administrarUsuariosToolStripMenuItem});
             this.formulariosToolStripMenuItem3.Name = "formulariosToolStripMenuItem3";
-            this.formulariosToolStripMenuItem3.Size = new System.Drawing.Size(270, 34);
+            this.formulariosToolStripMenuItem3.Size = new System.Drawing.Size(224, 28);
             this.formulariosToolStripMenuItem3.Text = "Formularios";
             // 
             // administrarUsuariosToolStripMenuItem
             // 
             this.administrarUsuariosToolStripMenuItem.Name = "administrarUsuariosToolStripMenuItem";
-            this.administrarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(302, 34);
+            this.administrarUsuariosToolStripMenuItem.Size = new System.Drawing.Size(273, 28);
             this.administrarUsuariosToolStripMenuItem.Text = "Administrar formularios";
             this.administrarUsuariosToolStripMenuItem.Click += new System.EventHandler(this.administrarUsuariosToolStripMenuItem_Click);
             // 
@@ -123,27 +130,30 @@ namespace TpPav.GuiLayer
             this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.administrarUsuarios});
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             // 
             // administrarUsuarios
             // 
             this.administrarUsuarios.Enabled = false;
             this.administrarUsuarios.Name = "administrarUsuarios";
-            this.administrarUsuarios.Size = new System.Drawing.Size(277, 34);
+            this.administrarUsuarios.Size = new System.Drawing.Size(250, 28);
             this.administrarUsuarios.Text = "Administrar usuarios";
             this.administrarUsuarios.Click += new System.EventHandler(this.administrarUsuariosToolStripMenuItem1_Click);
             // 
             // frmVentana
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1142, 750);
+            this.BackgroundImage = global::TpPav.Properties.Resources.fondo3;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmVentana";
-            this.Text = "frmVentana";
+            this.Text = "Principal";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmVentana_FormClosing);
             this.Load += new System.EventHandler(this.frmVentana_Load);
             this.menuStrip1.ResumeLayout(false);
