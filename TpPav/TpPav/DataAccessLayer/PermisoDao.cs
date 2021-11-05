@@ -14,7 +14,7 @@ namespace TpPav.DataAccessLayer
 
             var strSql = string.Concat(" SELECT f.nombre, ",
                                               "    p.nombre  ",
-                                              "   FROM Formulario f INNER JOIN Permisos per ON f.id_formulario = per.id_formulario ",
+                                              "   FROM Formularios f INNER JOIN Permisos per ON f.id_formulario = per.id_formulario ",
                                               "   INNER JOIN Perfiles p ON per.id_perfil=p.id_perfil");
                                               
 
@@ -33,7 +33,7 @@ namespace TpPav.DataAccessLayer
             //Construimos la consulta sql para buscar el usuario en la base de datos.
             var strSql = string.Concat(" SELECT f.nombre, ",
                                               "    p.nombre  ",
-                                              "   FROM Formulario f INNER JOIN Permisos per ON f.id_formulario = per.id_formulario ",
+                                              "   FROM Formularios f INNER JOIN Permisos per ON f.id_formulario = per.id_formulario ",
                                               "   INNER JOIN Perfiles p ON per.id_perfil=p.id_perfil",
                                               "Where per.id_formulario=@idFormulario AND per.id_perfil=@idPerfil");
 
@@ -57,7 +57,7 @@ namespace TpPav.DataAccessLayer
             List<Permiso> lst = new List<Permiso>();
             String strSql = string.Concat(" SELECT f.nombre, ",
                                               "    p.nombre  ",
-                                              "   FROM Formulario f INNER JOIN Permisos per ON f.id_formulario = per.id_formulario ",
+                                              "   FROM Formularios f INNER JOIN Permisos per ON f.id_formulario = per.id_formulario ",
                                               "   INNER JOIN Perfiles p ON per.id_perfil=p.id_perfil",
                                               "   WHERE 1=1");
 

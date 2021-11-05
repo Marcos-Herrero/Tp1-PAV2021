@@ -214,7 +214,6 @@ C:\Users\ecassini\Desktop\pav1_2021\TPCorregido\Tp1-PAV2021\TpPav\TpPav\obj\Debu
 C:\Users\ecassini\Desktop\pav1_2021\TPCorregido\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.GUILayer.Permisoes.frmPermisos.resources
 C:\Users\ecassini\Desktop\pav1_2021\TPCorregido\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.frmActualizar.resources
 C:\Users\ecassini\Desktop\pav1_2021\TPCorregido\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.frmNuevo.resources
-C:\Users\ecassini\Desktop\pav1_2021\TPCorregido\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.frmEliminar.resources
 C:\Users\ecassini\Desktop\pav1_2021\TPCorregido\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.frmModificar.resources
 C:\Users\ecassini\Desktop\pav1_2021\TPCorregido\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.Properties.Resources.resources
 C:\Users\ecassini\Desktop\pav1_2021\TPCorregido\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.csproj.GenerateResource.cache

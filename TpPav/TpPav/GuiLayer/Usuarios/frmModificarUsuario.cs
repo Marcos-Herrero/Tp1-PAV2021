@@ -15,24 +15,28 @@ namespace TpPav
     {
         private UsuarioService oUsuarioService;
         private PerfilService oPerfilService;
+        private Usuario usr;
         public frmModificar()
         {
             InitializeComponent();
             oUsuarioService = new UsuarioService();
             oPerfilService = new PerfilService();
+            usr = new Usuario();
         }
 
         private void frmModificar_Load(object sender, EventArgs e)
         {
             LlenarCombo(cboPerfil, oPerfilService.ObtenerTodos(), "Nombre", "Id_Perfil");
-            //LlenarCombo(cboEstado, oUsuarioService.ObtenerEstados(), "Estado", "");
+            
             cboEstado.DisplayMember = "Text";
             cboEstado.ValueMember = "Value";
             cboEstado.SelectedIndex = cboEstado.Items.IndexOf("N");
-
-            cboEstado.Items.Add(new { Text = "S", Value = 1 });
-            cboEstado.Items.Add(new { Text = "N", Value = 0 });
+            cboEstado.Items.Add(new { Text = 'S', Value = 0 });
+            cboEstado.Items.Add(new { Text = 'N', Value = 1 });
             cboEstado.SelectedIndex = 0;
+            usr = oUsuarioService.GetUsuarioById(Convert.ToInt32(txtId.Text));
+            cboPerfil.SelectedIndex = cboPerfil.FindString(usr.Perfil.Nombre);
+                
         }
         
         
@@ -47,12 +51,28 @@ namespace TpPav
                 consulta.Perfil = new Perfil();
                 consulta.Perfil.Id_Perfil = (int)cboPerfil.SelectedValue;
                 consulta.Estado = cboEstado.Text;
-                if(oUsuarioService.ActualizarUsuario(consulta))
+                consulta.Id_Usuario = Convert.ToInt32(txtId.Text);
+
+                if (usr.Perfil.Id_Perfil == (int)cboPerfil.SelectedValue)
                 {
-                    MessageBox.Show("Usuario actualizado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    frmUsuarios usu = new frmUsuarios();
-                    this.Close();
-                    usu.Show();
+                    if (oUsuarioService.ActualizarUsuario(consulta))
+                    {
+                        MessageBox.Show("Usuario actualizado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        frmUsuarios usu = new frmUsuarios();
+                        this.Close();
+                        
+                    }
+                }
+                else
+                {
+                    if (oUsuarioService.ActualizarUsuarioConHistorial(consulta))
+                    {
+                        MessageBox.Show("Usuario actualizado!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        frmUsuarios usu = new frmUsuarios();
+                        this.Close();
+                        
+
+                    }
                 }
                 
                 
@@ -75,8 +95,9 @@ namespace TpPav
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmUsuarios usu = new frmUsuarios();
-            usu.Show();
+            
+            
         }
+       
     }
 }

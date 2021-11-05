@@ -28,7 +28,7 @@ namespace TpPav.DataAccessLayer
             List<Formulario> lst = new List<Formulario>();
             String strSql = string.Concat(" SELECT id_formulario, ",
                                               "    nombre  ",
-                                              "   FROM Formulario ",
+                                              "   FROM Formularios ",
                                               "  WHERE borrado = 0");
 
             if (parametros.ContainsKey("idFormulario"))
@@ -36,7 +36,7 @@ namespace TpPav.DataAccessLayer
 
 
             if (parametros.ContainsKey("nombre"))
-                strSql += " AND (nombre =@nombre) ";
+                strSql += " AND (nombre = @nombre) ";
 
             var resultado = DataManager.GetInstance().ConsultaSql(strSql, parametros);
 

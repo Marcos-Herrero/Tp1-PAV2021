@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TpPav.Entities
 {
-    class HistoricoAsignaciones
+    public class HistoricoAsignaciones
     {
         public int IdHistoricoAsignaciones { get; set; }        
         public DateTime FechaHistorico { get; set; }

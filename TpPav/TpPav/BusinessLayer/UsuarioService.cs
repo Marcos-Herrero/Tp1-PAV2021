@@ -14,6 +14,11 @@ namespace TpPav.BusinessLayer
             oUsuarioDao = new UsuarioDao();
         }
 
+        public Usuario GetUsuarioById(int id)
+        {
+            return oUsuarioDao.GetUsuarioByID(id);
+        }
+
         public IList<Usuario> getUsuariosList()
         {
             return oUsuarioDao.GetUsuarios();
@@ -52,7 +57,10 @@ namespace TpPav.BusinessLayer
         {
             return oUsuarioDao.Update(oUsuarioSelected);
         }
-
+        internal bool ActualizarUsuarioConHistorial(Usuario oUsuarioSelected)
+        {
+            return oUsuarioDao.ModificarPerfil(oUsuarioSelected);
+        }
         internal bool EliminarUsuario(Usuario oUsuarioSelected)
         {
             return oUsuarioDao.Delete(oUsuarioSelected);

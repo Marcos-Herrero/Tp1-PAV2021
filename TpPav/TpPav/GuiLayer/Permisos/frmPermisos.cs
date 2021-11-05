@@ -75,7 +75,11 @@ namespace TpPav.GUILayer.Permisoes
         {
             this.Close();
         }
-
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            cboPerfil.Text = "";
+            cboIdFormulario.Text = "";
+        }
         private void btnConsultar_Click(System.Object sender, System.EventArgs e)
         {
             var filters = new Dictionary<string, object>();

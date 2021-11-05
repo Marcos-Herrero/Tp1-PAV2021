@@ -98,7 +98,7 @@ namespace TpPav
             frm.txtPassword.Text = dgvUsuarios.SelectedCells[3].Value.ToString();
             frm.txtEmail.Text = dgvUsuarios.SelectedCells[4].Value.ToString();
             frm.cboEstado.Text = dgvUsuarios.SelectedCells[5].Value.ToString();
-            this.Hide();
+            //this.Hide();
             frm.Show();
         }
        

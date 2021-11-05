@@ -35,11 +35,11 @@ namespace TpPav
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblMail = new System.Windows.Forms.Label();
+            this.lblPerfil = new System.Windows.Forms.Label();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.lblPass = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.btnConfirmar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -47,19 +47,23 @@ namespace TpPav
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.cboEstado);
             this.groupBox1.Controls.Add(this.cboPerfil);
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.txtPassword);
             this.groupBox1.Controls.Add(this.txtNombre);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(35, 22);
+            this.groupBox1.Controls.Add(this.lblMail);
+            this.groupBox1.Controls.Add(this.lblPerfil);
+            this.groupBox1.Controls.Add(this.lblEstado);
+            this.groupBox1.Controls.Add(this.lblPass);
+            this.groupBox1.Controls.Add(this.lblNombre);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Location = new System.Drawing.Point(40, 29);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(226, 237);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(273, 291);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nuevo Usuario";
@@ -67,119 +71,139 @@ namespace TpPav
             // cboEstado
             // 
             this.cboEstado.FormattingEnabled = true;
-            this.cboEstado.Location = new System.Drawing.Point(65, 180);
+            this.cboEstado.Location = new System.Drawing.Point(90, 226);
+            this.cboEstado.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(155, 23);
+            this.cboEstado.Size = new System.Drawing.Size(177, 28);
             this.cboEstado.TabIndex = 24;
             // 
             // cboPerfil
             // 
             this.cboPerfil.FormattingEnabled = true;
-            this.cboPerfil.Location = new System.Drawing.Point(65, 112);
-            this.cboPerfil.Size = new System.Drawing.Size(155, 23);
-            this.cboPerfil.TabIndex = 23;
+            this.cboPerfil.Location = new System.Drawing.Point(90, 134);
+            this.cboPerfil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboPerfil.Name = "cboPerfil";
+            this.cboPerfil.Size = new System.Drawing.Size(177, 28);
+            this.cboPerfil.TabIndex = 23;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(65, 143);
+            this.txtEmail.Location = new System.Drawing.Point(90, 181);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(155, 23);
+            this.txtEmail.Size = new System.Drawing.Size(177, 27);
             this.txtEmail.TabIndex = 22;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(65, 76);
+            this.txtPassword.Location = new System.Drawing.Point(90, 89);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(155, 23);
+            this.txtPassword.Size = new System.Drawing.Size(177, 27);
             this.txtPassword.TabIndex = 19;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(65, 37);
+            this.txtNombre.Location = new System.Drawing.Point(90, 46);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(155, 23);
+            this.txtNombre.Size = new System.Drawing.Size(177, 27);
             this.txtNombre.TabIndex = 18;
             // 
-            // label6
+            // lblMail
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 146);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 15);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "E-mail";
+            this.lblMail.AutoSize = true;
+            this.lblMail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblMail.Location = new System.Drawing.Point(26, 188);
+            this.lblMail.Name = "lblMail";
+            this.lblMail.Size = new System.Drawing.Size(55, 20);
+            this.lblMail.TabIndex = 17;
+            this.lblMail.Text = "E-mail:";
             // 
-            // label5
+            // lblPerfil
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 112);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 15);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Perfil";
+            this.lblPerfil.AutoSize = true;
+            this.lblPerfil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblPerfil.Location = new System.Drawing.Point(36, 142);
+            this.lblPerfil.Name = "lblPerfil";
+            this.lblPerfil.Size = new System.Drawing.Size(45, 20);
+            this.lblPerfil.TabIndex = 16;
+            this.lblPerfil.Text = "Perfil:";
             // 
-            // label4
+            // lblEstado
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 183);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 15);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Estado";
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblEstado.Location = new System.Drawing.Point(24, 234);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(57, 20);
+            this.lblEstado.TabIndex = 15;
+            this.lblEstado.Text = "Estado:";
             // 
-            // label2
+            // lblPass
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 15);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Password";
+            this.lblPass.AutoSize = true;
+            this.lblPass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblPass.Location = new System.Drawing.Point(8, 96);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(73, 20);
+            this.lblPass.TabIndex = 13;
+            this.lblPass.Text = "Password:";
             // 
-            // label1
+            // lblNombre
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 15);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Nombre";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNombre.Location = new System.Drawing.Point(14, 53);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(67, 20);
+            this.lblNombre.TabIndex = 12;
+            this.lblNombre.Text = "Nombre:";
             // 
             // btnConfirmar
             // 
-            this.btnConfirmar.Location = new System.Drawing.Point(131, 276);
+            this.btnConfirmar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnConfirmar.BackgroundImage = global::TpPav.Properties.Resources.grabar3;
+            this.btnConfirmar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnConfirmar.Location = new System.Drawing.Point(183, 328);
+            this.btnConfirmar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnConfirmar.Name = "btnConfirmar";
-            this.btnConfirmar.Size = new System.Drawing.Size(75, 23);
+            this.btnConfirmar.Size = new System.Drawing.Size(56, 45);
             this.btnConfirmar.TabIndex = 13;
-            this.btnConfirmar.Text = "Confirmar";
-            this.btnConfirmar.UseVisualStyleBackColor = true;
+            this.btnConfirmar.UseVisualStyleBackColor = false;
             this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(229, 276);
+            this.btnSalir.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSalir.BackgroundImage = global::TpPav.Properties.Resources.salir;
+            this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSalir.Location = new System.Drawing.Point(259, 329);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.Size = new System.Drawing.Size(54, 45);
             this.btnSalir.TabIndex = 14;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.UseVisualStyleBackColor = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // frmNuevo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(316, 321);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImage = global::TpPav.Properties.Resources.prueba;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(333, 387);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnConfirmar);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmNuevo";
             this.Text = "Nuevo";
+            this.Load += new System.EventHandler(this.frmNuevo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.Load += new System.EventHandler(this.frmNuevo_Load);
 
         }
 
@@ -189,11 +213,11 @@ namespace TpPav
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblMail;
+        private System.Windows.Forms.Label lblPerfil;
+        private System.Windows.Forms.Label lblEstado;
+        private System.Windows.Forms.Label lblPass;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Button btnConfirmar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ComboBox cboEstado;

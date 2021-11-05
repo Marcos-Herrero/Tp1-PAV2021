@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnQuitar = new System.Windows.Forms.Button();
             this.dgvPermisos = new System.Windows.Forms.DataGridView();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.cboPerfil = new System.Windows.Forms.ComboBox();
             this.lblIdPerfil = new System.Windows.Forms.Label();
             this.pnlFiltros = new System.Windows.Forms.GroupBox();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.cboIdFormulario = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPermisos)).BeginInit();
             this.pnlFiltros.SuspendLayout();
@@ -61,6 +63,14 @@
             this.dgvPermisos.AllowUserToAddRows = false;
             this.dgvPermisos.AllowUserToDeleteRows = false;
             this.dgvPermisos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPermisos.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvPermisos.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvPermisos.Location = new System.Drawing.Point(4, 182);
             this.dgvPermisos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -130,12 +140,14 @@
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(415, 132);
+            this.btnConsultar.BackgroundImage = global::TpPav.Properties.Resources.BUSCAR01;
+            this.btnConsultar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnConsultar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnConsultar.Location = new System.Drawing.Point(442, 89);
             this.btnConsultar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(116, 35);
+            this.btnConsultar.Size = new System.Drawing.Size(66, 45);
             this.btnConsultar.TabIndex = 3;
-            this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
@@ -161,6 +173,8 @@
             // pnlFiltros
             // 
             this.pnlFiltros.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlFiltros.BackColor = System.Drawing.Color.Transparent;
+            this.pnlFiltros.Controls.Add(this.btnLimpiar);
             this.pnlFiltros.Controls.Add(this.cboIdFormulario);
             this.pnlFiltros.Controls.Add(this.dgvPermisos);
             this.pnlFiltros.Controls.Add(this.chkTodos);
@@ -168,6 +182,7 @@
             this.pnlFiltros.Controls.Add(this.btnConsultar);
             this.pnlFiltros.Controls.Add(this.cboPerfil);
             this.pnlFiltros.Controls.Add(this.lblIdPerfil);
+            this.pnlFiltros.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.pnlFiltros.Location = new System.Drawing.Point(16, 18);
             this.pnlFiltros.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlFiltros.Name = "pnlFiltros";
@@ -176,6 +191,17 @@
             this.pnlFiltros.TabIndex = 8;
             this.pnlFiltros.TabStop = false;
             this.pnlFiltros.Text = "Filtros";
+            // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackgroundImage = global::TpPav.Properties.Resources.Empty_Recycle_Bin_2000;
+            this.btnLimpiar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnLimpiar.Location = new System.Drawing.Point(442, 35);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(66, 45);
+            this.btnLimpiar.TabIndex = 19;
+            this.btnLimpiar.UseVisualStyleBackColor = true;
             // 
             // cboIdFormulario
             // 
@@ -190,6 +216,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::TpPav.Properties.Resources.prueba;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(588, 605);
             this.Controls.Add(this.btnQuitar);
             this.Controls.Add(this.btnSalir);
@@ -225,5 +253,6 @@
         internal System.Windows.Forms.Label lblIdPerfil;
         internal System.Windows.Forms.GroupBox pnlFiltros;
         internal System.Windows.Forms.ComboBox cboIdFormulario;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

@@ -38,29 +38,33 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(366, 140);
+            this.btnCancelar.BackgroundImage = global::TpPav.Properties.Resources.eliminar;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCancelar.Location = new System.Drawing.Point(401, 140);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(107, 35);
+            this.btnCancelar.Size = new System.Drawing.Size(72, 35);
             this.btnCancelar.TabIndex = 22;
-            this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(241, 140);
+            this.btnAceptar.BackgroundImage = global::TpPav.Properties.Resources.grabar3;
+            this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAceptar.Location = new System.Drawing.Point(301, 140);
             this.btnAceptar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(104, 35);
+            this.btnAceptar.Size = new System.Drawing.Size(71, 35);
             this.btnAceptar.TabIndex = 21;
-            this.btnAceptar.Text = "&Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // Label5
             // 
             this.Label5.AutoSize = true;
+            this.Label5.BackColor = System.Drawing.Color.Transparent;
+            this.Label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Label5.Location = new System.Drawing.Point(133, 90);
             this.Label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Label5.Name = "Label5";
@@ -71,12 +75,14 @@
             // lblIdF
             // 
             this.lblIdF.AutoSize = true;
+            this.lblIdF.BackColor = System.Drawing.Color.Transparent;
+            this.lblIdF.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblIdF.Location = new System.Drawing.Point(97, 36);
             this.lblIdF.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIdF.Name = "lblIdF";
-            this.lblIdF.Size = new System.Drawing.Size(114, 20);
+            this.lblIdF.Size = new System.Drawing.Size(117, 20);
             this.lblIdF.TabIndex = 31;
-            this.lblIdF.Text = "Id Formulario(*)";
+            this.lblIdF.Text = "Id Formulario(*):";
             // 
             // cboIdForm
             // 
@@ -98,7 +104,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 199);
+            this.BackgroundImage = global::TpPav.Properties.Resources.prueba;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(540, 199);
             this.Controls.Add(this.cboIdPerfil);
             this.Controls.Add(this.cboIdForm);
             this.Controls.Add(this.lblIdF);

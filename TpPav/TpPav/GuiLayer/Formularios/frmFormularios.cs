@@ -65,6 +65,13 @@ namespace TpPav.GUILayer.Formularioes
             }
         }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            cboFormularios.Text = "";
+            cboFormularios.Text = "";
+        }
+
+
         private void btnSalir_Click(System.Object sender, System.EventArgs e)
         {
             this.Close();
