@@ -42,7 +42,11 @@
           "dependencies": {
             "Microsoft.ReportingServices.ReportViewerControl.Winforms": {
               "target": "Package",
-              "version": "[140.340.80, )"
+              "version": "[150.1484.0, )"
+            },
+            "Microsoft.SqlServer.Types": {
+              "target": "Package",
+              "version": "[14.0.1016.290, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

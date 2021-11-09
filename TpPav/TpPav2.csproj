@@ -1,0 +1,372 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{7526A06A-9625-46B4-883B-FE54DA148021}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>TpPav2</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Temp.txt" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\de\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\de\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\de\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\de\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\de\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\de\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\es\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\es\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\es\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\es\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\es\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\es\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\fr\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\fr\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\fr\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\fr\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\fr\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\fr\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\it\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\it\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\it\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\it\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\it\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\it\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ja\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ja\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ja\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ja\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ja\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ja\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ko\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ko\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ko\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ko\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ko\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ko\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.Common.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.DataVisualization.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.Design.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.WebDesign.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.WebForms.DLL" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.WinForms.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\Microsoft.SqlServer.Types.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\pt\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\pt\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\pt\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\pt\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\pt\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\pt\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ru\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ru\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ru\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ru\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ru\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\ru\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\TpPav.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\TpPav.exe" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\TpPav.pdb" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHS\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHS\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.Common.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.Design.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll" />
+    <Content Include="TpPav\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll" />
+    <Content Include="TpPav\obj\Debug\netcoreapp3.1\apphost.exe" />
+    <Content Include="TpPav\obj\Debug\netcoreapp3.1\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="TpPav\obj\Debug\netcoreapp3.1\TempPE\Reportes.DataSet1.Designer.cs.dll" />
+    <Content Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.csproj.FileListAbsolute.txt" />
+    <Content Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.dll" />
+    <Content Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.pdb" />
+    <Content Include="TpPav\Resources\agregar.png" />
+    <Content Include="TpPav\Resources\BUSCAR01.bmp" />
+    <Content Include="TpPav\Resources\cabecera.png" />
+    <Content Include="TpPav\Resources\cancelar3.png" />
+    <Content Include="TpPav\Resources\Candado.png" />
+    <Content Include="TpPav\Resources\cerrar.png" />
+    <Content Include="TpPav\Resources\comentar.png" />
+    <Content Include="TpPav\Resources\dos.png" />
+    <Content Include="TpPav\Resources\editar.png" />
+    <Content Include="TpPav\Resources\eliminar.png" />
+    <Content Include="TpPav\Resources\Empty Recycle Bin 2000.ico" />
+    <Content Include="TpPav\Resources\grabar3.png" />
+    <Content Include="TpPav\Resources\login.bmp" />
+    <Content Include="TpPav\Resources\login.jpg" />
+    <Content Include="TpPav\Resources\login.png" />
+    <Content Include="TpPav\Resources\logoLog.png" />
+    <Content Include="TpPav\Resources\menu.png" />
+    <Content Include="TpPav\Resources\nuevo1.png" />
+    <Content Include="TpPav\Resources\prueba.png" />
+    <Content Include="TpPav\Resources\salir.png" />
+    <Content Include="TpPav\Resources\test.png" />
+    <Content Include="TpPav\Resources\user.jpg" />
+    <Content Include="TpPav\Resources\user_log.png" />
+    <Content Include="TpPav\Resources\usr.png" />
+    <Content Include="TpPav\TpPav.csproj.user" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\TpPav\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\TpPav\v16\.suo" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="TpPav.zip" />
+    <None Include="TpPav\bin\Debug\netcoreapp3.1\TpPav.deps.json" />
+    <None Include="TpPav\bin\Debug\netcoreapp3.1\TpPav.runtimeconfig.dev.json" />
+    <None Include="TpPav\bin\Debug\netcoreapp3.1\TpPav.runtimeconfig.json" />
+    <None Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.AssemblyInfoInputs.cache" />
+    <None Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.assets.cache" />
+    <None Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.csproj.AssemblyReference.cache" />
+    <None Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.csproj.CopyComplete" />
+    <None Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.csproj.CoreCompileInputs.cache" />
+    <None Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.csproj.GenerateResource.cache" />
+    <None Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.designer.deps.json" />
+    <None Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.designer.runtimeconfig.json" />
+    <None Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.genruntimeconfig.cache" />
+    <None Include="TpPav\obj\project.assets.json" />
+    <None Include="TpPav\obj\project.nuget.cache" />
+    <None Include="TpPav\obj\Release\netcoreapp3.1\TpPav.AssemblyInfoInputs.cache" />
+    <None Include="TpPav\obj\Release\netcoreapp3.1\TpPav.assets.cache" />
+    <None Include="TpPav\obj\Release\netcoreapp3.1\TpPav.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="TpPav\obj\TpPav.csproj.nuget.dgspec.json" />
+    <None Include="TpPav\obj\TpPav.csproj.nuget.g.props" />
+    <None Include="TpPav\obj\TpPav.csproj.nuget.g.targets" />
+    <None Include="TpPav\Properties\Settings.settings" />
+    <None Include="TpPav\Reportes\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TpPav\Reportes\DataSet1.xsd" />
+    <None Include="TpPav\Reportes\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TpPav\TpPav.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TpPav\BusinessLayer\FormularioService.cs" />
+    <Compile Include="TpPav\BusinessLayer\PerfilService.cs" />
+    <Compile Include="TpPav\BusinessLayer\PermisoService.cs" />
+    <Compile Include="TpPav\BusinessLayer\UsuarioService.cs" />
+    <Compile Include="TpPav\DataAccessLayer\DataManager.cs" />
+    <Compile Include="TpPav\DataAccessLayer\FormularioDao.cs" />
+    <Compile Include="TpPav\DataAccessLayer\HistoriocoDeAsignacionesDao.cs" />
+    <Compile Include="TpPav\DataAccessLayer\PerfilDao.cs" />
+    <Compile Include="TpPav\DataAccessLayer\PermisoDao.cs" />
+    <Compile Include="TpPav\DataAccessLayer\UsuarioDao.cs" />
+    <Compile Include="TpPav\Entities\Formulario.cs" />
+    <Compile Include="TpPav\Entities\HistoricoAsignaciones.cs" />
+    <Compile Include="TpPav\Entities\Perfil.cs" />
+    <Compile Include="TpPav\Entities\Permiso.cs" />
+    <Compile Include="TpPav\Entities\Usuario.cs" />
+    <Compile Include="TpPav\GuiLayer\Formularios\frmABMFormularios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Formularios\frmABMFormularios.Designer.cs">
+      <DependentUpon>frmABMFormularios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Formularios\frmFormularios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Formularios\frmFormularios.Designer.cs">
+      <DependentUpon>frmFormularios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\frmVentana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\frmVentana.Designer.cs">
+      <DependentUpon>frmVentana.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Perfiles\frmABMPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Perfiles\frmABMPerfiles.Designer.cs">
+      <DependentUpon>frmABMPerfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Perfiles\frmPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Perfiles\frmPerfiles.Designer.cs">
+      <DependentUpon>frmPerfiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Permisos\frmABMPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Permisos\frmABMPermisos.Designer.cs">
+      <DependentUpon>frmABMPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Permisos\frmPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Permisos\frmPermisos.Designer.cs">
+      <DependentUpon>frmPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Transaccion\frmActualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Transaccion\frmActualizar.Designer.cs">
+      <DependentUpon>frmActualizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Usuarios\frmAgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Usuarios\frmAgregarUsuario.Designer.cs">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Usuarios\frmModificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\GuiLayer\Usuarios\frmModificarUsuario.Designer.cs">
+      <DependentUpon>frmModificarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.AssemblyInfo.cs" />
+    <Compile Include="TpPav\obj\Release\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Include="TpPav\obj\Release\netcoreapp3.1\TpPav.AssemblyInfo.cs" />
+    <Compile Include="TpPav\Program.cs" />
+    <Compile Include="TpPav\Properties\Resources.Designer.cs" />
+    <Compile Include="TpPav\Properties\Settings.Designer.cs" />
+    <Compile Include="TpPav\Reportes\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\Reportes\DataSet1.Designer.cs">
+      <DependentUpon>DataSet1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TpPav\Reportes\ReporteHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TpPav\Reportes\ReporteHistorico.Designer.cs">
+      <DependentUpon>ReporteHistorico.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TpPav\GuiLayer\Formularios\frmABMFormularios.resx">
+      <DependentUpon>frmABMFormularios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\Formularios\frmFormularios.resx">
+      <DependentUpon>frmFormularios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\frmVentana.resx">
+      <DependentUpon>frmVentana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\Perfiles\frmABMPerfiles.resx">
+      <DependentUpon>frmABMPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\Perfiles\frmPerfiles.resx">
+      <DependentUpon>frmPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\Permisos\frmABMPermisos.resx">
+      <DependentUpon>frmABMPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\Permisos\frmPermisos.resx">
+      <DependentUpon>frmPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\Transaccion\frmActualizar.resx">
+      <DependentUpon>frmActualizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\Usuarios\frmAgregarUsuario.resx">
+      <DependentUpon>frmAgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\GuiLayer\Usuarios\frmModificarUsuario.resx">
+      <DependentUpon>frmModificarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.frmActualizar.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.frmModificar.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.frmNuevo.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.frmUsuarios.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.GUILayer.Formularioes.frmFormularios.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.GuiLayer.frmLogin.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.GuiLayer.frmVentana.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.GUILayer.Perfiles.frmPerfiles.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.GUILayer.Permisoes.frmPermisos.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.GUILayer.Usuarios.frmABMFormularios.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.GUILayer.Usuarios.frmABMPerfiles.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.GUILayer.Usuarios.frmABMPermisos.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.Properties.Resources.resources" />
+    <EmbeddedResource Include="TpPav\obj\Debug\netcoreapp3.1\TpPav.Reportes.ReporteHistorico.resources" />
+    <EmbeddedResource Include="TpPav\Properties\Resources.resx" />
+    <EmbeddedResource Include="TpPav\Reportes\Report1.rdlc" />
+    <EmbeddedResource Include="TpPav\Reportes\ReporteHistorico.resx">
+      <DependentUpon>ReporteHistorico.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\TpPav2\v16\" />
+    <Folder Include="TpPav\bin\Debug\netcoreapp3.1\cs\" />
+    <Folder Include="TpPav\bin\Debug\netcoreapp3.1\pl\" />
+    <Folder Include="TpPav\bin\Debug\netcoreapp3.1\pt-BR\" />
+    <Folder Include="TpPav\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\" />
+    <Folder Include="TpPav\bin\Debug\netcoreapp3.1\tr\" />
+    <Folder Include="TpPav\bin\Debug\netcoreapp3.1\zh-HANS\" />
+    <Folder Include="TpPav\bin\Debug\netcoreapp3.1\zh-HANT\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

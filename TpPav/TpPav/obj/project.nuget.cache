@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MMqxC7nd2xwien4gUEFtHEKrSycMm0/9pLQ94BvSIUoZ/hRcGe5Bldq0HL5LXu7vIjWft2CPXyeeOmofKB0u+w==",
+  "dgSpecHash": "9cYM3RjPo1uVSaqNg893lpJ1IZSdnSSc0/fHe+JQv6LboUvyuihAJtS2jq/YS4OetA5V4ZNGxtpgtLam1JljVQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Marcos\\Documents\\PAVFinal\\Tp1-PAV2021\\TpPav\\TpPav\\TpPav.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
-    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.reportingservices.reportviewercontrol.winforms\\140.340.80\\microsoft.reportingservices.reportviewercontrol.winforms.140.340.80.nupkg.sha512",
-    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.sqlserver.types\\14.0.314.76\\microsoft.sqlserver.types.14.0.314.76.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.reportingservices.reportviewercontrol.winforms\\150.1484.0\\microsoft.reportingservices.reportviewercontrol.winforms.150.1484.0.nupkg.sha512",
+    "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.sqlserver.types\\14.0.1016.290\\microsoft.sqlserver.types.14.0.1016.290.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
     "C:\\Users\\Marcos\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
@@ -18,20 +18,10 @@
   ],
   "logs": [
     {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Microsoft.ReportingServices.ReportViewerControl.Winforms 140.340.80 depende de Microsoft.SqlServer.Types (>= 14.0.0), pero no se encontró Microsoft.SqlServer.Types 14.0.0. Se resolvió una mejor coincidencia aproximada de Microsoft.SqlServer.Types 14.0.314.76.",
-      "libraryId": "Microsoft.SqlServer.Types",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
-    {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "El paquete \"Microsoft.ReportingServices.ReportViewerControl.Winforms 140.340.80\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "message": "El paquete \"Microsoft.ReportingServices.ReportViewerControl.Winforms 150.1484.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "Microsoft.ReportingServices.ReportViewerControl.Winforms",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
@@ -41,7 +31,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "El paquete \"Microsoft.SqlServer.Types 14.0.314.76\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "message": "El paquete \"Microsoft.SqlServer.Types 14.0.1016.290\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\" en lugar de la plataforma de destino del proyecto \".NETCoreApp,Version=v3.1\". Puede que el paquete no sea totalmente compatible con el proyecto.",
       "libraryId": "Microsoft.SqlServer.Types",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"

@@ -227,9 +227,8 @@ C:\Users\ecassini\Desktop\pav1_2021\TPCorregido\Tp1-PAV2021\TpPav\TpPav\obj\Debu
 C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\obj\Debug\netcoreapp3.1\TpPav.Reportes.ReporteHistorico.resources
 C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.Common.dll
 C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.DataVisualization.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.Design.dll
 C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.ProcessingObjectModel.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.Design.dll
 C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.SqlServer.Types.dll
 C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\de\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\de\Microsoft.ReportViewer.DataVisualization.resources.dll
@@ -271,15 +270,4 @@ C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3
 C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
 C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
 C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-HANS\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-HANS\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-HANS\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-HANS\Microsoft.ReportViewer.WinForms.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-HANT\Microsoft.ReportViewer.Common.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-HANT\Microsoft.ReportViewer.DataVisualization.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-HANT\Microsoft.ReportViewer.Design.resources.dll
-C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\zh-HANT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Marcos\Documents\PAVFinal\Tp1-PAV2021\TpPav\TpPav\bin\Debug\netcoreapp3.1\Microsoft.ReportViewer.WinForms.dll
