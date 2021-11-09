@@ -38,7 +38,6 @@ namespace TpPav
         private void _btnAgregar_Click(object sender, EventArgs e)
         {
 
-
             var form = (Formulario)_cboFormularios.SelectedItem;
             Perfil per = new Perfil();
             per.Nombre = txtPerfil.Text;
@@ -69,6 +68,7 @@ namespace TpPav
                     oPerfilService.CrearPerfil(perfil);
 
                     MessageBox.Show(string.Concat("El detalle nro: ", perfil.Id_Perfil, " se generó correctamente."), "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
 
                     InicializarFormulario();
                 }
@@ -101,6 +101,7 @@ namespace TpPav
         private void InicializarDetalle()
         {
             _cboFormularios.SelectedIndex = -1;
+            txtPerfil.Text = "";
             
         }
         private void _cboFormularios_SelectedIndexChanged(object sender, EventArgs e)
@@ -123,11 +124,7 @@ namespace TpPav
                 listaPermisos.Remove(permisoSeleccionado);
             }
         }     
-        private void btnConfirmar_Click(object sender, EventArgs e)
-        {
-            
-
-        }
+      
         private void LlenarCombo(ComboBox cbo, Object source, string display, String value)
         {
             cbo.DataSource = source;
@@ -139,8 +136,7 @@ namespace TpPav
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmUsuarios usu = new frmUsuarios();
-            usu.Show();
+            
         }
         private void _btnCancelar_Click(object sender, EventArgs e)
         {

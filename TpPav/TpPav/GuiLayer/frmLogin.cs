@@ -44,9 +44,10 @@ namespace TpPav.GuiLayer
                 UsuarioLogueado = usr.UsuarioNombre;
                 if (UsuarioLogueado=="administrador")
                 { 
-                    frmVentana f= new frmVentana(true);                    
+                    frmVentana f= new frmVentana(true);
+                    this.Hide();
                     f.ShowDialog();
-                    this.Close();
+                    
                 }
                 else
                 {

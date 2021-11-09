@@ -14,7 +14,7 @@ namespace TpPav.DataAccessLayer
             var strSql = string.Concat(" SELECT p.IdHistoricoAsignaciones, p.nombre, f.nombre ",
                                        "   FROM Formulario f  INNER JOIN Permisos per ON f.id_formulario = per.id_formulario ",
                                         "   INNER JOIN HistoricoDeAsignacioneses p ON per.IdHistoricoAsignaciones=p.IdHistoricoAsignaciones",
-                                        "where p.borrado=0");
+                                        " WHERE p.borrado=0");
 
 
             var resultadoConsulta = DataManager.GetInstance().ConsultaSql(strSql);
@@ -106,6 +106,8 @@ namespace TpPav.DataAccessLayer
             // Si una fila es afectada por la inserción retorna TRUE. Caso contrario FALSE
             return (DataManager.GetInstance().EjecutarSql(str_sql, parametros) == 1);
         }
+
+
 
         internal bool Delete(HistoricoAsignaciones oHistoricoDeAsignaciones)
         {

@@ -29,7 +29,7 @@ namespace TpPav.DataAccessLayer
             List<Usuario> listadoUsuarios = new List<Usuario>();
             string consulta = "SELECT TOP 20 id_usuario, P.nombre, P.id_perfil, usuario,email,estado,password " +
                     " FROM Usuarios U JOIN Perfiles P ON U.id_perfil = P.id_perfil " +
-                    " WHERE U.borrado = 0" +
+                    " WHERE U.borrado = 0 " +
                     " ORDER BY id_usuario DESC";
             var resultadoConsulta = (DataRowCollection)DataManager.GetInstance().ConsultaSql(consulta).Rows;
             foreach (DataRow row in resultadoConsulta)
@@ -89,7 +89,7 @@ namespace TpPav.DataAccessLayer
             List<Usuario> listadoUsuarios = new List<Usuario>();
             string consulta = "SELECT id_usuario, P.nombre,P.id_perfil, usuario,email,estado,password " +
             " FROM Usuarios U JOIN Perfiles P ON U.id_perfil = P.id_perfil " +
-            " where id_usuario > 0";
+            " where id_usuario > 0 AND U.borrado = 0 ";
             if (parametros.ContainsKey("usuario"))
                 consulta += " AND (usuario=@usuario) ";
             if (parametros.ContainsKey("nombre"))
@@ -176,7 +176,7 @@ namespace TpPav.DataAccessLayer
 
         internal bool ModificarPerfil(Usuario oUsuario)
         {
-            var string_conexion = "Data Source=NBAR15232;Initial Catalog=DB_TP;Integrated Security=true;";
+            var string_conexion = "Data Source=DESKTOP-82E3KBS\\SQLEXPRESS;Initial Catalog=DB_TP;Integrated Security=true;";
 
             SqlConnection dbConnection = new SqlConnection();
             SqlTransaction dbTransaction = null;

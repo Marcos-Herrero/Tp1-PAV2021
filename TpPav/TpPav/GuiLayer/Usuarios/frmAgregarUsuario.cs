@@ -87,8 +87,7 @@ namespace TpPav
         private void btnSalir_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmUsuarios frm = new frmUsuarios();
-            frm.Show();
+            
         }
     }
 
